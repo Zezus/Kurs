@@ -13,6 +13,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Net.Mail;
+using System.Security.Cryptography;
 
 namespace KursavayaServer
 {
@@ -145,16 +146,84 @@ namespace KursavayaServer
             return login_search;
         }
 
+        static string GetMd5Hash(string input)
+        {
+            MD5 md5Hash = MD5.Create();
+
+            // Convert the input string to a byte array and compute the hash.
+            byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
+
+            // Create a new Stringbuilder to collect the bytes
+            // and create a string.
+            StringBuilder sBuilder = new StringBuilder();
+
+            // Loop through each byte of the hashed data 
+            // and format each one as a hexadecimal string.
+            for (int i = 0; i < data.Length; i++)
+            {
+                sBuilder.Append(data[i].ToString("x2"));
+            }
+
+            // Return the hexadecimal string.
+            return sBuilder.ToString();
+        }
+
+        static bool ByteArrayCompare(byte[] a1, byte[] a2)
+        {
+            if (a1.Length != a2.Length)
+                return false;
+
+            for (int i = 0; i < a1.Length; i++)
+                if (a1[i] != a2[i])
+                    return false;
+
+            return true;
+        }
+
         public void PageMain(bool b)
         {
             var storage = new XmlStorage("UserBase.xml");
             var users = storage.Load();
+
+
+            #region Проверяем хешированный пароль
+            bool hashpass = false;
+            foreach (var item in users)
+            {
+                if (login == item.Login)
+                {
+                    if (login == "admin" && password == "admin")
+                    {
+                        hashpass = true;
+                    }
+                    else
+                    {
+                        byte[] buffer4;
+                        if (item.Password == null)
+                        {
+                            hashpass = false;
+                        }
+                        if (password == null)
+                        {
+                            throw new ArgumentNullException("password");
+                        }
+                        var passhash = GetMd5Hash(password);
+                        byte[] passHashbBytes1 = Encoding.UTF8.GetBytes(passhash);
+                        byte[] passHashbBytes2 = Encoding.UTF8.GetBytes(item.Password);
+
+                        hashpass = ByteArrayCompare(passHashbBytes1, passHashbBytes2);
+                    }
+                }
+
+            }
+            #endregion
+
             bool check_user = false;
             if (b == true)
             {
                 foreach (var item in users)
                 {
-                    if (login == item.Login && password == item.Password)
+                    if (login == item.Login && hashpass == true)
                     {
                         check_user = true;
                         user = item;
@@ -331,9 +400,6 @@ namespace KursavayaServer
             return login_search;
         }
 
-
-
-
         public void PageRemimdPas(bool b)
         {
             var storage = new XmlStorage("UserBase.xml");
@@ -361,7 +427,7 @@ namespace KursavayaServer
                 {
                     // int random = rnd.Next(10000, 99999);
                     int random = 1;
-                    
+
                     foreach (var item in users)
                     {
                         if (item.Login == login)

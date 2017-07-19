@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -95,7 +96,7 @@ namespace KursTest
                 method.TypePage(stream, typePage);
 
                 //отправляем данные с входа
-                string userData = tbLogin.Text + " " + tbPassword.Password.ToString();
+                string userData = tbLogin.Text + " " + tbPassword.Password;
                 method.Send(stream, userData);
 
                 byte[] otvetRegistra = new byte[2];
