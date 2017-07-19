@@ -1,0 +1,58 @@
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe.config
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe.config
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.csprojResolveAssemblyReference.cache
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.pdb
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.exe
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.pdb
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaServer\KursavayaServer\bin\Debug\XMLFile1.xml
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaServer\KursavayaServer\bin\Debug\bin\Debug\XMLFile1.xml
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaServer\KursavayaServer\bin\Debug\bin\Debug\XMLFile1.xml
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaServer\KursavayaServer\bin\Debug\XMLFile1.xml
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.pdb
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.csprojResolveAssemblyReference.cache
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.exe
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.pdb
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaServer\KursavayaServer\bin\Debug\XMLFile1.xml
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe.config
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.pdb
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.csprojResolveAssemblyReference.cache
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.exe
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.pdb
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaServer\KursavayaServer\bin\Debug\XMLFile1.xml
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe.config
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.pdb
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.csprojResolveAssemblyReference.cache
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.exe
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.pdb
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\bin\Debug\XMLFile1.xml
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe.config
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.pdb
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.csprojResolveAssemblyReference.cache
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.exe
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.pdb
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\bin\Debug\XMLFile1.xml
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe.config
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.pdb
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.csprojResolveAssemblyReference.cache
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.exe
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.pdb
+C:\Users\СадвакасовР\Desktop\курсач тест\KursavayaServer\KursavayaServer\bin\Debug\XMLFile1.xml
+C:\Users\СадвакасовР\Desktop\курсач тест\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe.config
+C:\Users\СадвакасовР\Desktop\курсач тест\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe
+C:\Users\СадвакасовР\Desktop\курсач тест\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.pdb
+C:\Users\СадвакасовР\Desktop\курсач тест\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.csprojResolveAssemblyReference.cache
+C:\Users\СадвакасовР\Desktop\курсач тест\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.exe
+C:\Users\СадвакасовР\Desktop\курсач тест\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.pdb
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaServer\KursavayaServer\bin\Debug\XMLFile1.xml
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe.config
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.pdb
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.csprojResolveAssemblyReference.cache
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.exe
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.pdb

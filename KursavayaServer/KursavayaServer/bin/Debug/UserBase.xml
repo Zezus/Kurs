@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User>
+    <Login>admin</Login>
+    <Name>admin</Name>
+    <Password>admin</Password>
+    <Count>0</Count>
+  </User>
+  <User>
+    <Login>2222222</Login>
+    <Name>2222222</Name>
+    <Password>2222222</Password>
+    <Message>
+	3:26	привет  
+	3:26	какдела  
+	3:26	я тут  
+	3:27	таты  </Message>
+    <Count>4</Count>
+  </User>
+  <User>
+    <Login>testnew</Login>
+    <Mail>testnew@gmail.com</Mail>
+    <Name>testnew</Name>
+    <Password>45626336</Password>
+    <Message>
+	1:25	s  
+	1:25	 
+	1:26	ghbdtn  
+	1:26	 
+	1:26	d  </Message>
+    <Count>5</Count>
+  </User>
+  <User>
+    <Login>testnew2</Login>
+    <Mail>testnew2@mail.ru</Mail>
+    <Name>testnew2</Name>
+    <Password>testnew2</Password>
+    <Message>
+	1:59	s  
+	1:59	asdasd  
+	1:59	 
+	2:05	вывы  
+	4:55	 
+	4:57	s  
+	4:57	s  
+	4:57	s  
+	4:57	sa  
+	4:57	das  
+	4:57	sa  </Message>
+    <Count>11</Count>
+  </User>
+</ArrayOfUser>

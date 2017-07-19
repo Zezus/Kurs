@@ -1,0 +1,263 @@
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\bin\Debug\KursTest.exe.config
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\obj\Debug\KursTest.exe
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\obj\Debug\KursTest.pdb
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\bin\Debug\KursTest.exe
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\bin\Debug\KursTest.pdb
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\obj\Debug\MainWindow.g.cs
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\obj\Debug\App.g.cs
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\obj\Debug\KursTest_MarkupCompile.cache
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\obj\Debug\KursTest_MarkupCompile.lref
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\obj\Debug\App.baml
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\obj\Debug\MainWindow.baml
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\obj\Debug\KursTest.g.resources
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\obj\Debug\KursTest.Properties.Resources.resources
+C:\Users\СадвакасовР\Desktop\KursTest\KursTest\obj\Debug\Kursavaya.csproj.GenerateResource.Cache
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\bin\Debug\KursTest.exe
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\bin\Debug\KursTest.exe.config
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\KursTest.exe
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\KursTest.pdb
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\Kursavaya.csprojResolveAssemblyReference.cache
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\MainWindow.g.cs
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\App.g.cs
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\KursTest_MarkupCompile.cache
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\KursTest_MarkupCompile.lref
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\bin\Debug\KursTest.exe
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\bin\Debug\KursTest.pdb
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\App.baml
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\MainWindow.baml
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\KursTest.g.resources
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\KursTest.Properties.Resources.resources
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\Kursavaya.csproj.GenerateResource.Cache
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\bin\Debug\MaterialDesignColors.pdb
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\Chat.g.cs
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\Kursavaya\KursTest\obj\Debug\Chat.baml
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\bin\Debug\KursTest.exe.config
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\bin\Debug\MaterialDesignColors.pdb
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\MainWindow.g.cs
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\Chat.g.cs
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\RegistrationWindow.g.cs
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\App.g.cs
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\KursTest_MarkupCompile.cache
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\KursTest_MarkupCompile.lref
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\App.baml
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\MainWindow.baml
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\Chat.baml
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\RegistrationWindow.baml
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\KursTest.g.resources
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\KursTest.Properties.Resources.resources
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\Kursavaya.csproj.GenerateResource.Cache
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\KursTest.exe
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\KursTest.pdb
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\bin\Debug\KursTest.pdb
+C:\Users\СадвакасовР\Desktop\курсач\Kursavaya\KursTest\obj\Debug\Kursavaya.csprojResolveAssemblyReference.cache
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\bin\Debug\KursTest.exe.config
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\KursTest.exe
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\KursTest.pdb
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\Kursavaya.csprojResolveAssemblyReference.cache
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\MainWindow.g.cs
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\PageChat.g.cs
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\App.g.cs
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.cache
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.lref
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\bin\Debug\KursTest.exe
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\bin\Debug\KursTest.pdb
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.pdb
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\App.baml
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\MainWindow.baml
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\PageChat.baml
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\KursTest.g.resources
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\KursTest.Properties.Resources.resources
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\Kursavaya.csproj.GenerateResource.Cache
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\PageMain.g.cs
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\PageMain.baml
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\PageRegistr.g.cs
+C:\Users\СадвакасовР\Desktop\курсач\KursavayaClient\KursTest\obj\Debug\PageRegistr.baml
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\bin\Debug\KursTest.exe.config
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\KursTest.exe
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\KursTest.pdb
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\bin\Debug\KursTest.exe
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\bin\Debug\KursTest.pdb
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.pdb
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\Kursavaya.csprojResolveAssemblyReference.cache
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\MainWindow.g.cs
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\PageChat.g.cs
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\PageMain.g.cs
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\PageRegistr.g.cs
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\App.g.cs
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.cache
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.lref
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\App.baml
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\MainWindow.baml
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\PageChat.baml
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\PageMain.baml
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\PageRegistr.baml
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\KursTest.g.resources
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\KursTest.Properties.Resources.resources
+C:\Users\AZIA\Desktop\папки\ШАГ\курсач\KursavayaClient\KursTest\obj\Debug\Kursavaya.csproj.GenerateResource.Cache
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\KursTest.exe.config
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\KursTest.exe
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\KursTest.pdb
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.pdb
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\Kursavaya.csprojResolveAssemblyReference.cache
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\MainWindow.g.cs
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageChat.g.cs
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageMain.g.cs
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageRegistr.g.cs
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\App.g.cs
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.cache
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.lref
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\App.baml
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\MainWindow.baml
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageChat.baml
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageMain.baml
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageRegistr.baml
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\KursTest.g.resources
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\KursTest.Properties.Resources.resources
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\Kursavaya.csproj.GenerateResource.Cache
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\KursTest.exe
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\KursTest.pdb
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageAdmin.g.cs
+C:\Users\AZIA\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageAdmin.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\KursTest.exe.config
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\KursTest.exe
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\KursTest.pdb
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.pdb
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\Kursavaya.csprojResolveAssemblyReference.cache
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\MainWindow.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageAdmin.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageChat.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageMain.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageRegistr.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\App.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.cache
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.lref
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\App.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\MainWindow.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageAdmin.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageChat.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageMain.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\PageRegistr.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\KursTest.g.resources
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\KursTest.Properties.Resources.resources
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\Kursavaya.csproj.GenerateResource.Cache
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\KursTest.exe
+C:\Users\СадвакасовР\Desktop\курсач_тест\KursavayaClient\KursTest\obj\Debug\KursTest.pdb
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\KursTest.exe.config
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\KursTest.exe
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\KursTest.pdb
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.pdb
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\Kursavaya.csprojResolveAssemblyReference.cache
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\MainWindow.g.cs
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageAdmin.g.cs
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageChat.g.cs
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageMain.g.cs
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageRegistr.g.cs
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\App.g.cs
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.cache
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.lref
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\App.baml
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\MainWindow.baml
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageAdmin.baml
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageChat.baml
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageMain.baml
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageRegistr.baml
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest.g.resources
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest.Properties.Resources.resources
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\Kursavaya.csproj.GenerateResource.Cache
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest.exe
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest.pdb
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\KursTest.exe.config
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\KursTest.exe
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\KursTest.pdb
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.pdb
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\Kursavaya.csprojResolveAssemblyReference.cache
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\MainWindow.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageAdmin.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageChat.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageMain.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageRegistr.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\App.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.cache
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.lref
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\App.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\MainWindow.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageAdmin.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageChat.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageMain.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\PageRegistr.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest.g.resources
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest.Properties.Resources.resources
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\Kursavaya.csproj.GenerateResource.Cache
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest.exe
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest.pdb
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\Remind_password.g.cs
+C:\Users\AZIA\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\Remind_password.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\Remind_password.g.cs
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\Remind_password.baml
+C:\Users\СадвакасовР\Desktop\курсач_тест1\KursavayaClient\KursTest\obj\Debug\KursTest_Content.g.cs
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\bin\Debug\KursTest.exe.config
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\bin\Debug\KursTest.exe
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\bin\Debug\KursTest.pdb
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.pdb
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\Kursavaya.csprojResolveAssemblyReference.cache
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\MainWindow.g.cs
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\PageAdmin.g.cs
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\PageChat.g.cs
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\PageMain.g.cs
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\PageRegistr.g.cs
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\Remind_password.g.cs
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\App.g.cs
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.cache
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.lref
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\App.baml
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\MainWindow.baml
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\PageAdmin.baml
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\PageChat.baml
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\PageMain.baml
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\PageRegistr.baml
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\Remind_password.baml
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\KursTest.g.resources
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\KursTest.Properties.Resources.resources
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\Kursavaya.csproj.GenerateResource.Cache
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\KursTest.exe
+C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\KursTest.pdb
