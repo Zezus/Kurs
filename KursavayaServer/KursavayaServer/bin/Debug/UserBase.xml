@@ -20,4 +20,17 @@
 	7:53	d  </Message>
     <Count>6</Count>
   </User>
+  <User>
+    <Login>тестн3</Login>
+    <Mail>тестн3@mail.ru</Mail>
+    <Name>тестн3</Name>
+    <Password>f3c7bdc82ae252ef29af5e02fa2c0bb7</Password>
+    <Message>
+	8:32	ыфв  
+	8:32	ыы  
+	8:32	ы  
+	8:33	s  
+	8:33	ss  </Message>
+    <Count>5</Count>
+  </User>
 </ArrayOfUser>

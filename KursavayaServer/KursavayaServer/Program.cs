@@ -1,55 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
 
 namespace KursavayaServer
 {
     public class Program
     {
-        static Connected connected = new Connected();
+        public static Connected Connected = new Connected();
 
-        static void Main(string[] args)
+        static void Main()
         {
             TcpListener server = new TcpListener(IPAddress.Parse("127.0.0.1"), 3084);
             server.Start();
             while (true)
             {
-                connected.Listen(server);
-                var type = connected.Type();
+                Connected.Listen(server);
+                var type = Connected.Type();
                 
 
                 if (type == "KursTest.PageRegistr")
                 {
-                    var data = connected.Data();
-                    var boool = connected.YesNoRegistr();
-                    connected.PageRegistr(boool);
+                    Connected.Data();
+                    var boool = Connected.YesNoRegistr();
+                    Connected.PageRegistr(boool);
                 }
                 if (type == "KursTest.PageMain")
                 {
-                    var data = connected.Data();
-                    var boool = connected.YesNoMain();
-                    connected.PageMain(boool);
+                    Connected.Data();
+                    var boool = Connected.YesNoMain();
+                    Connected.PageMain(boool);
                 }
                 if (type == "KursTest.PageChat")
                 {
-                    connected.PageChat();
+                    Connected.PageChat();
                 }
                 if (type == "KursTest.PageAdmin")
                 {
-                    connected.PageAdmin();
+                    Connected.PageAdmin();
                 }
                 if (type == "KursTest.Remind_password")
                 {
-                    var data = connected.Data();
-                    var boool = connected.YesNoRemimdPas();
-                    connected.PageRemimdPas(boool);
+                    Connected.Data();
+                    var boool = Connected.YesNoRemimdPas();
+                    Connected.PageRemimdPas(boool);
                 }
             }
+            // ReSharper disable once FunctionNeverReturns
         }
     }
 }
