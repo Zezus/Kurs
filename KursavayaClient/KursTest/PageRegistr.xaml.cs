@@ -1,20 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Sockets;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 
 namespace KursTest
@@ -22,15 +12,15 @@ namespace KursTest
     /// <summary>
     /// Логика взаимодействия для PageRegistr.xaml
     /// </summary>
-    public partial class PageRegistr : Page
+    public partial class PageRegistr
     {
-        TcpClient client;
-        NetworkStream stream;
-        bool flag = true;
-        bool check6 = false;
-        bool checkProb = false;
-        bool checkRepPas = false;
-        Methods method = new Methods();
+        private TcpClient _client;
+        private NetworkStream _stream;
+        private bool _flag = true;
+        private bool _check6;
+        private bool _checkProb;
+        private bool _checkRepPas;
+        private readonly Methods _method = new Methods();
 
         public PageRegistr()
         {
@@ -39,61 +29,61 @@ namespace KursTest
             cSelectmail.Items.Add("@gmail.com");
         }
 
-        public bool TestDate(string log, string mail, string pas, string rep_pas, string name)
+        public bool TestDate(string log, string mail, string pas, string repPas, string name)
         {
             int min = 6;
             int max = 10;
-            if (log != "" && pas != "" && rep_pas != "" && name != "" && mail != "")
+            if (log != "" && pas != "" && repPas != "" && name != "" && mail != "")
             {
-                if (pas == rep_pas)
+                if (pas == repPas)
                 {
-                    if (log.IndexOf(' ') == -1 && pas.IndexOf(' ') == -1 && rep_pas.IndexOf(' ') == -1 && name.IndexOf(' ') == -1 && mail.IndexOf(' ') == -1)
+                    if (log.IndexOf(' ') == -1 && pas.IndexOf(' ') == -1 && repPas.IndexOf(' ') == -1 && name.IndexOf(' ') == -1 && mail.IndexOf(' ') == -1)
                     {
-                        if (log.Length >= min && pas.Length >= min && rep_pas.Length >= min && name.Length >= 4)
+                        if (log.Length >= min && pas.Length >= min && repPas.Length >= min && name.Length >= 4)
                         {
-                            if (log.Length <= max && pas.Length <= max && rep_pas.Length <= max && name.Length <= max)
+                            if (log.Length <= max && pas.Length <= max && repPas.Length <= max && name.Length <= max)
                             {
 
                             }
                             else
                             {
-                                flag = false;
+                                _flag = false;
                                 MessageBox.Show("Максимальная длина ввода 10 символов", "Error", MessageBoxButton.OK);
                             }
                         }
                         else
                         {
-                            flag = false;
+                            _flag = false;
                             MessageBox.Show("Минимальная длина ввода 6 символов (поле name 4 символа)", "Error", MessageBoxButton.OK);
                         }
                     }
                     else
                     {
-                        flag = false;
+                        _flag = false;
                         MessageBox.Show("Нельзя вводить пробелы", "Error", MessageBoxButton.OK);
 
                     }
                 }
                 else
                 {
-                    flag = false;
+                    _flag = false;
                     MessageBox.Show("Пароли не совпадают", "Error", MessageBoxButton.OK);
 
                 }
             }
             else
             {
-                flag = false;
+                _flag = false;
                 MessageBox.Show("Все поля должны быть заполнены", "Error", MessageBoxButton.OK);
             }
 
 
 
 
-            return flag;
+            return _flag;
         }
-        
-        static string GetMd5Hash(string input)
+
+        private static string GetMd5Hash(string input)
         {
             MD5 md5Hash = MD5.Create();
 
@@ -117,63 +107,60 @@ namespace KursTest
 
         private void butRegistr_RegWin_Click(object sender, RoutedEventArgs e)
         {
-            TestDate(tbLogin.Text, tbMail.Text, tbPassword.Password.ToString(), tbRepeatPass.Password.ToString(), tbName.Text);
-            if (flag == true)
-            {
-                client = new TcpClient();
-                client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
-                stream = client.GetStream();
+            TestDate(tbLogin.Text, tbMail.Text, tbPassword.Password, tbRepeatPass.Password, tbName.Text);
+            if (_flag != true) return;
+            _client = new TcpClient();
+            _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+            _stream = _client.GetStream();
 
-                //отправляем тип активной страницы
-                string typePage = this.GetType().ToString();
-                method.TypePage(stream, typePage);
+            //отправляем тип активной страницы
+            var typePage = GetType().ToString();
+            _method.TypePage(_stream, typePage);
 
-                //хешируем пароль 
-                var passHashed = GetMd5Hash(tbPassword.Password);
-                //ОТправляем данные с регистрации
-                string userData = tbLogin.Text + " " + passHashed + " " + tbName.Text + " " + tbMail.Text + cSelectmail.SelectedItem.ToString();
-                method.Send(stream, userData);
+            //хешируем пароль 
+            var passHashed = GetMd5Hash(tbPassword.Password);
+            //ОТправляем данные с регистрации
+            var userData = tbLogin.Text + " " + passHashed + " " + tbName.Text + " " + tbMail.Text + cSelectmail.SelectedItem;
+            _method.Send(_stream, userData);
                 
 
-                byte[] otvetRegistra = new byte[2];
-                stream.Read(otvetRegistra, 0, otvetRegistra.Length);
-                string yes_no = Encoding.Unicode.GetString(otvetRegistra);
-                if (yes_no == "0")
-                {
-                    ((ContentControl)(this.Parent)).Content = new PageMain();
-                    MessageBox.Show("Регистрация прошла успешно, теперь вы можете войти в чат", "Goog Job", MessageBoxButton.OK); tbLogin.Clear();
-                }
-                else MessageBox.Show("Пользователь с таким логином уже существует", "Error", MessageBoxButton.OK); tbLogin.Clear();
-
+            byte[] otvetRegistra = new byte[2];
+            _stream.Read(otvetRegistra, 0, otvetRegistra.Length);
+            string yesNo = Encoding.Unicode.GetString(otvetRegistra);
+            if (yesNo == "0")
+            {
+                ((ContentControl)Parent).Content = new PageMain();
+                MessageBox.Show("Регистрация прошла успешно, теперь вы можете войти в чат", "Goog Job", MessageBoxButton.OK); tbLogin.Clear();
             }
+            else MessageBox.Show("Пользователь с таким логином уже существует", "Error", MessageBoxButton.OK); tbLogin.Clear();
         }
 
         private void butExit_RegPage_Click(object sender, RoutedEventArgs e)
         {
 
-            ((ContentControl)(this.Parent)).Content = new PageMain();
+            ((ContentControl)Parent).Content = new PageMain();
         }
 
         private void tbName_TextChanged(object sender, TextChangedEventArgs e)
          {
             if (tbName.Text.Length >= 6)
             {
-                check6 = true;
+                _check6 = true;
             }
             else
             {
-                check6 = false;
+                _check6 = false;
             }
             if (tbName.Text.IndexOf(' ') == -1 && tbName.Text.Length!=0)
             {
-                checkProb = true;
+                _checkProb = true;
             }
             else
             {
-                checkProb = false;
+                _checkProb = false;
             }
 
-            if (checkProb == true)
+            if (_checkProb)
             {
                 p_probel.Foreground = Brushes.Aqua;
                 v_Name.Text = "";
@@ -183,10 +170,10 @@ namespace KursTest
                 p_probel.Foreground = Brushes.Red;
                 v_Name.Text = "◄";
             }
-            if (check6 == true)
+            if (_check6)
             {
                 p_6symbol.Foreground = Brushes.Aqua;
-                if (checkProb != true)
+                if (_checkProb != true)
                 {
                     v_Name.Text = "◄";
                 }
@@ -206,22 +193,22 @@ namespace KursTest
         {
             if (tbLogin.Text.Length >= 6)
             {
-                check6 = true;
+                _check6 = true;
             }
             else
             {
-                check6 = false;
+                _check6 = false;
             }
             if (tbLogin.Text.IndexOf(' ') == -1 && tbLogin.Text.Length != 0)
             {
-                checkProb = true;
+                _checkProb = true;
             }
             else
             {
-                checkProb = false;
+                _checkProb = false;
             }
 
-            if (checkProb == true)
+            if (_checkProb)
             {
                 p_probel.Foreground = Brushes.Aqua;
                 v_Login.Text = "";
@@ -231,10 +218,10 @@ namespace KursTest
                 p_probel.Foreground = Brushes.Red;
                 v_Login.Text = "◄";
             }
-            if (check6 == true)
+            if (_check6)
             {
                 p_6symbol.Foreground = Brushes.Aqua;
-                if (checkProb != true)
+                if (_checkProb != true)
                 {
                     v_Login.Text = "◄";
                 }
@@ -252,24 +239,24 @@ namespace KursTest
 
         private void tbPassword_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            if (tbPassword.Password.ToString().Length >= 6)
+            if (tbPassword.Password.Length >= 6)
             {
-                check6 = true;
+                _check6 = true;
             }
             else
             {
-                check6 = false;
+                _check6 = false;
             }
-            if (tbPassword.Password.ToString().IndexOf(' ') == -1 && tbPassword.Password.ToString().Length != 0)
+            if (tbPassword.Password.IndexOf(' ') == -1 && tbPassword.Password.Length != 0)
             {
-                checkProb = true;
+                _checkProb = true;
             }
             else
             {
-                checkProb = false;
+                _checkProb = false;
             }
 
-            if (checkProb == true)
+            if (_checkProb)
             {
                 p_probel.Foreground = Brushes.Aqua;
                 v_Pass.Text = "";
@@ -279,10 +266,10 @@ namespace KursTest
                 p_probel.Foreground = Brushes.Red;
                 v_Pass.Text = "◄";
             }
-            if (check6 == true)
+            if (_check6)
             {
                 p_6symbol.Foreground = Brushes.Aqua;
-                if (checkProb != true)
+                if (_checkProb != true)
                 {
                     v_Pass.Text = "◄";
                 }
@@ -300,16 +287,16 @@ namespace KursTest
 
         private void tbRepeatPass_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            if (tbRepeatPass.Password.ToString() == tbPassword.Password.ToString())
+            if (tbRepeatPass.Password == tbPassword.Password)
             {
-                checkRepPas = true;
+                _checkRepPas = true;
             }
             else
             {
-                checkRepPas = false;
+                _checkRepPas = false;
             }
 
-            if (checkRepPas == true)
+            if (_checkRepPas)
             {
                 p_pass.Foreground = Brushes.Aqua;
                 v_RepPas.Text = "";
@@ -323,7 +310,6 @@ namespace KursTest
 
         private void cSelectmail_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var items = cSelectmail.SelectedItem.ToString();
         }
     }
 }

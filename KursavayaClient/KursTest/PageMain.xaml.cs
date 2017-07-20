@@ -1,32 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Sockets;
-using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace KursTest
 {
     /// <summary>
     /// Логика взаимодействия для PageMain.xaml
     /// </summary>
-    public partial class PageMain : Page
+    public partial class PageMain
     {
 
-        TcpClient client;
-        NetworkStream stream;
-        bool flag = true;
+        TcpClient _client;
+        NetworkStream _stream;
+        bool _flag = true;
         Methods method = new Methods();
 
         public PageMain()
@@ -56,62 +44,62 @@ namespace KursTest
                             }
                             else
                             {
-                                flag = false;
+                                _flag = false;
                                 MessageBox.Show("Максимальная длина ввода 10 символов", "Error", MessageBoxButton.OK);
                             }
                         }
                         else
                         {
-                            flag = false;
+                            _flag = false;
                             MessageBox.Show("Минимальная длина ввода 6 символов", "Error", MessageBoxButton.OK);
                         }
                     }
                     else
                     {
-                        flag = false;
+                        _flag = false;
                         MessageBox.Show("Нельзя вводить пробелы", "Error", MessageBoxButton.OK);
 
                     }
                 }
                 else
                 {
-                    flag = false;
+                    _flag = false;
                     MessageBox.Show("Все поля должны быть заполнены", "Error", MessageBoxButton.OK);
                 }
             }
-            return flag;
+            return _flag;
         }
 
         private void butLogin_Click(object sender, RoutedEventArgs e)
         {
-            TestDate(tbLogin.Text, tbPassword.Password.ToString());
-            if (flag == true)
+            TestDate(tbLogin.Text, tbPassword.Password);
+            if (_flag)
             {
-                client = new TcpClient();
-                client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
-                stream = client.GetStream();
+                _client = new TcpClient();
+                _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+                _stream = _client.GetStream();
 
                 //отправляем тип активной страницы
-                string typePage = this.GetType().ToString();
-                method.TypePage(stream, typePage);
+                string typePage = GetType().ToString();
+                method.TypePage(_stream, typePage);
 
                 //отправляем данные с входа
                 string userData = tbLogin.Text + " " + tbPassword.Password;
-                method.Send(stream, userData);
+                method.Send(_stream, userData);
 
                 byte[] otvetRegistra = new byte[2];
-                stream.Read(otvetRegistra, 0, otvetRegistra.Length);
-                string yes_no = Encoding.Unicode.GetString(otvetRegistra);
-                if (yes_no == "0")
+                _stream.Read(otvetRegistra, 0, otvetRegistra.Length);
+                string yesNo = Encoding.Unicode.GetString(otvetRegistra);
+                if (yesNo == "0")
                 {
-                    if (tbLogin.Text == "admin" && tbPassword.Password.ToString() == "admin")
+                    if (tbLogin.Text == "admin" && tbPassword.Password == "admin")
                     {
-                        ((ContentControl)(this.Parent)).Content = new PageAdmin();
+                        ((ContentControl)Parent).Content = new PageAdmin();
                         MessageBox.Show("Авторизация прошла успешно, теперь вы можете войти в чат", "Goog Job", MessageBoxButton.OK);
                     }
                     else
                     {
-                        ((ContentControl)(this.Parent)).Content = new PageChat();
+                        ((ContentControl)Parent).Content = new PageChat();
                         MessageBox.Show("Авторизация прошла успешно, теперь вы можете войти в чат", "Goog Job", MessageBoxButton.OK);
                     }
                 }
@@ -127,13 +115,13 @@ namespace KursTest
         }
         private void butRegistr_Click(object sender, RoutedEventArgs e)
         {
-            ((ContentControl)(this.Parent)).Content = new PageRegistr();
+            ((ContentControl)Parent).Content = new PageRegistr();
 
         }
 
         private void ButtonRememberPas(object sender, RoutedEventArgs e)
         {
-            ((ContentControl)(this.Parent)).Content = new Remind_password();
+            ((ContentControl)Parent).Content = new RemindPassword();
         }
     }
 }

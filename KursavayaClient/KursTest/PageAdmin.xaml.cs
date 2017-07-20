@@ -1,41 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace KursTest
 {
     /// <summary>
     /// Логика взаимодействия для PageAdmin.xaml
     /// </summary>
-    public partial class PageAdmin : Page
+    public partial class PageAdmin
     {
-        TcpClient client;
-        NetworkStream stream;
-        const int buffersize = 12;
-        byte[] wait1 = new byte[1];
-        String[] lognema_Mas;
-        string login;
-        string messages;
-        string name;
-        string password;
-        string countMes;
-        List<User> listuser;
-        Methods method = new Methods();
+        TcpClient _client;
+        NetworkStream _stream;
+        const int Buffersize = 12;
+        readonly byte[] _wait1 = new byte[1];
+        String[] _lognemaMas;
+        string _login;
+        string _messages;
+        string _name;
+        string _password;
+        string _countMes;
+        List<User> _listuser;
+        readonly Methods _method = new Methods();
 
         public PageAdmin()
         {
@@ -47,13 +38,13 @@ namespace KursTest
 
         private void ButtonLoadUsers(object sender, RoutedEventArgs e)
         {
-            client = new TcpClient();
-            client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
-            stream = client.GetStream();
+            _client = new TcpClient();
+            _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+            _stream = _client.GetStream();
 
             //отправляем тип активной страницы
-            string typePage = this.GetType().ToString();
-            method.TypePage(stream, typePage);
+            string typePage = GetType().ToString();
+            _method.TypePage(_stream, typePage);
 
             /*#region Отправляем название кнопки которая нажата
             var methodType = System.Reflection.MethodBase.GetCurrentMethod().Name;
@@ -65,56 +56,56 @@ namespace KursTest
             stream.Write(methodType_byte, 0, methodType_byte.Length);
             #endregion*/
             var methodType = System.Reflection.MethodBase.GetCurrentMethod().Name;
-            method.Send(stream, methodType);
+            _method.Send(_stream, methodType);
 
-            byte[] count_lenght_byte = new byte[buffersize];
-            stream.Read(count_lenght_byte, 0, count_lenght_byte.Length);
-            string count_lenght = Encoding.Unicode.GetString(count_lenght_byte);
+            byte[] countLenghtByte = new byte[Buffersize];
+            _stream.Read(countLenghtByte, 0, countLenghtByte.Length);
+            string countLenght = Encoding.Unicode.GetString(countLenghtByte);
 
-            stream.Write(wait1, 0, wait1.Length);
+            _stream.Write(_wait1, 0, _wait1.Length);
 
-            byte[] count_lenght_end = new byte[int.Parse(count_lenght)];
-            stream.Read(count_lenght_end, 0, count_lenght_end.Length);
-            string count = Encoding.Unicode.GetString(count_lenght_end);
+            byte[] countLenghtEnd = new byte[int.Parse(countLenght)];
+            _stream.Read(countLenghtEnd, 0, countLenghtEnd.Length);
+            string count = Encoding.Unicode.GetString(countLenghtEnd);
 
-            listuser = new List<User>(int.Parse(count));
+            _listuser = new List<User>(int.Parse(count));
 
             for (int i = 0; i < int.Parse(count); i++)
             {
-                byte[] logname_buff = new byte[buffersize];
-                stream.Read(logname_buff, 0, logname_buff.Length);
-                string logname_lenght = Encoding.Unicode.GetString(logname_buff);
-                stream.Write(wait1, 0, wait1.Length);
-                byte[] logname_buff2 = new byte[int.Parse(logname_lenght)];
-                stream.Read(logname_buff2, 0, logname_buff2.Length);
-                string logname = Encoding.Unicode.GetString(logname_buff2);
-                lognema_Mas = logname.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
-                login = lognema_Mas[0];
-                name = lognema_Mas[1];
-                password = lognema_Mas[2];
-                countMes = lognema_Mas[3];
+                byte[] lognameBuff = new byte[Buffersize];
+                _stream.Read(lognameBuff, 0, lognameBuff.Length);
+                string lognameLenght = Encoding.Unicode.GetString(lognameBuff);
+                _stream.Write(_wait1, 0, _wait1.Length);
+                byte[] lognameBuff2 = new byte[int.Parse(lognameLenght)];
+                _stream.Read(lognameBuff2, 0, lognameBuff2.Length);
+                string logname = Encoding.Unicode.GetString(lognameBuff2);
+                _lognemaMas = logname.Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                _login = _lognemaMas[0];
+                _name = _lognemaMas[1];
+                _password = _lognemaMas[2];
+                _countMes = _lognemaMas[3];
 
-                lbtest.Items.Add($"{i + 1}.\t  {login}");
+                lbtest.Items.Add($"{i + 1}.\t  {_login}");
 
                 byte[] otvetRegistra = new byte[2];
-                stream.Read(otvetRegistra, 0, otvetRegistra.Length);
-                string yes_no = Encoding.Unicode.GetString(otvetRegistra);
-                if (yes_no == "0")
+                _stream.Read(otvetRegistra, 0, otvetRegistra.Length);
+                string yesNo = Encoding.Unicode.GetString(otvetRegistra);
+                if (yesNo == "0")
                 {
-                    stream.Write(wait1, 0, wait1.Length);
-                    byte[] message_buff = new byte[buffersize];
-                    stream.Read(message_buff, 0, message_buff.Length);
-                    string mes_lenght = Encoding.Unicode.GetString(message_buff);
-                    stream.Write(wait1, 0, wait1.Length);
-                    byte[] mes_buff2 = new byte[int.Parse(mes_lenght)];
-                    stream.Read(mes_buff2, 0, mes_buff2.Length);
-                    string message_Text = Encoding.Unicode.GetString(mes_buff2);
-                    messages = message_Text;
-                    listuser.Add(new User { Login = login, Name = name, Password = password, Message = messages, Count = countMes });
+                    _stream.Write(_wait1, 0, _wait1.Length);
+                    byte[] messageBuff = new byte[Buffersize];
+                    _stream.Read(messageBuff, 0, messageBuff.Length);
+                    string mesLenght = Encoding.Unicode.GetString(messageBuff);
+                    _stream.Write(_wait1, 0, _wait1.Length);
+                    byte[] mesBuff2 = new byte[int.Parse(mesLenght)];
+                    _stream.Read(mesBuff2, 0, mesBuff2.Length);
+                    string messageText = Encoding.Unicode.GetString(mesBuff2);
+                    _messages = messageText;
+                    _listuser.Add(new User { Login = _login, Name = _name, Password = _password, Message = _messages, Count = _countMes });
                 }
                 else
                 {
-                    listuser.Add(new User { Login = login, Name = name, Password = password, Count = countMes });
+                    _listuser.Add(new User { Login = _login, Name = _name, Password = _password, Count = _countMes });
                 }
             }
             btLoadUsers.IsEnabled = false;
@@ -122,24 +113,24 @@ namespace KursTest
 
         private void ButtonDelete(object sender, RoutedEventArgs e)
         {
-            client = new TcpClient();
-            client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
-            stream = client.GetStream();
+            _client = new TcpClient();
+            _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+            _stream = _client.GetStream();
 
             //отправляем тип активной страницы
-            string typePage = this.GetType().ToString();
-            method.TypePage(stream, typePage);
+            string typePage = GetType().ToString();
+            _method.TypePage(_stream, typePage);
 
             //region Отправляем название кнопки которая нажата
             var methodType = System.Reflection.MethodBase.GetCurrentMethod().Name;
-            method.Send(stream, methodType);
+            _method.Send(_stream, methodType);
 
             var result = (MessageBox.Show("Вы уверены что хотите удалить данного пользователя", "Really", MessageBoxButton.YesNo, MessageBoxImage.Question));
             if (result == MessageBoxResult.Yes)
             {
                 var item = lbtest.SelectedItems;
-                var items_Mas = item[0].ToString().Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
-                string items = items_Mas[1];
+                var itemsMas = item[0].ToString().Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                string items = itemsMas[1];
                 foreach (var v in lbtest.SelectedItems)
                 {
                     lbtest.Items.Remove(v);
@@ -148,12 +139,12 @@ namespace KursTest
                 tbInfo.Clear(); tbViewMessages.Clear();
                 tbInfo.IsEnabled = false; tbViewMessages.IsEnabled = false;
 
-                byte[] selected_byte = Encoding.Unicode.GetBytes(items);
-                string selected_lenght = selected_byte.Length.ToString();
-                byte[] selected_lenght_byte = Encoding.Unicode.GetBytes(selected_lenght);
-                stream.Write(selected_lenght_byte, 0, selected_lenght_byte.Length);
-                stream.Read(wait1, 0, wait1.Length);
-                stream.Write(selected_byte, 0, selected_byte.Length);
+                byte[] selectedByte = Encoding.Unicode.GetBytes(items);
+                string selectedLenght = selectedByte.Length.ToString();
+                byte[] selectedLenghtByte = Encoding.Unicode.GetBytes(selectedLenght);
+                _stream.Write(selectedLenghtByte, 0, selectedLenghtByte.Length);
+                _stream.Read(_wait1, 0, _wait1.Length);
+                _stream.Write(selectedByte, 0, selectedByte.Length);
             }
 
         }
@@ -161,10 +152,9 @@ namespace KursTest
         {
             tbViewMessages.IsEnabled = true;
             tbViewMessages.Clear();
-            string item = lvUsersName.SelectedIndex.ToString();
             var items = lvUsersName.SelectedItems;
             User selected = (User)items[0];
-            var userDate = listuser.First(x => x.Login == selected.Login);
+            var userDate = _listuser.First(x => x.Login == selected.Login);
             tbViewMessages.AppendText(userDate.Message);
         }
 
@@ -177,14 +167,13 @@ namespace KursTest
             tbInfo.Height = 150;
             tbInfo.Width = 270;
 
-            string item = lvUsersName.SelectedIndex.ToString();
             var items = lvUsersName.SelectedItems;
             if (items.Count != 0)
             {
                 User selected = (User)items[0];
 
 
-                var a = listuser.First(i => i.Login == selected.Login);
+                var a = _listuser.First(i => i.Login == selected.Login);
                 tbInfo.AppendText($"Login: {a.Login}{Environment.NewLine}{Environment.NewLine}Name: {a.Name}{Environment.NewLine}{Environment.NewLine}Password: {a.Password}{Environment.NewLine}{Environment.NewLine}Количество сообщений: {a.Count}");
                 ViewMessages();
             }
@@ -200,7 +189,7 @@ namespace KursTest
             var result = (MessageBox.Show("Вы уверены что хотите выйти?", "Really", MessageBoxButton.YesNo, MessageBoxImage.Question));
             if (result == MessageBoxResult.Yes)
             {
-                ((ContentControl)(this.Parent)).Content = new PageMain();
+                ((ContentControl)Parent).Content = new PageMain();
             }
         }
 
@@ -209,9 +198,9 @@ namespace KursTest
             tbViewMessages.IsEnabled = true;
             tbViewMessages.Clear();
             var item = lbtest.SelectedItems;
-            var items_Mas = item[0].ToString().Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
-            string items = items_Mas[1];
-            var userDate = listuser.First(x => x.Login == items);
+            var itemsMas = item[0].ToString().Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+            string items = itemsMas[1];
+            var userDate = _listuser.First(x => x.Login == items);
             tbViewMessages.AppendText(userDate.Message);
         }
         private void lbtest_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -230,11 +219,11 @@ namespace KursTest
             }
             else
             {
-                var items_Mas = item[0].ToString().Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
-                string items = items_Mas[1];
+                var itemsMas = item[0].ToString().Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                string items = itemsMas[1];
                 if (item.Count != 0)
                 {
-                    var a = listuser.First(i => i.Login == items);
+                    var a = _listuser.First(i => i.Login == items);
                     tbInfo.AppendText($"Login: {a.Login}{Environment.NewLine}{Environment.NewLine}Name: {a.Name}{Environment.NewLine}{Environment.NewLine}Password: {a.Password}{Environment.NewLine}{Environment.NewLine}Количество сообщений: {a.Count}");
                     ViewMessages2();
                 }

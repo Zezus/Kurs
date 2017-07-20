@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Sockets;
+﻿using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace KursTest
 {
@@ -17,31 +13,30 @@ namespace KursTest
                 //тип окна
                 //string typePage = this.GetType().ToString();
                 //байтовый типа окна
-                byte[] typePage_byte = Encoding.Unicode.GetBytes(typePage);
+                byte[] typePageByte = Encoding.Unicode.GetBytes(typePage);
                 //размер типа окна
-                string typePage_lenght = typePage_byte.Length.ToString();
+                string typePageLenght = typePageByte.Length.ToString();
                 //байтовый размер типа  окна
-                byte[] typePage_lenght_byte = Encoding.Unicode.GetBytes(typePage_lenght);
+                byte[] typePageLenghtByte = Encoding.Unicode.GetBytes(typePageLenght);
                 //отправляем размер окна
-                stream.Write(typePage_lenght_byte, 0, typePage_lenght_byte.Length);
+                stream.Write(typePageLenghtByte, 0, typePageLenghtByte.Length);
                 #endregion
 
                 #region отправка типа окна
-                byte[] wait1 = new byte[1];
                 stream.Read(wait1, 0, wait1.Length);
-                stream.Write(typePage_byte, 0, typePage_byte.Length);
+                stream.Write(typePageByte, 0, typePageByte.Length);
                 #endregion
         }
 
         public void Send(NetworkStream stream, string userData)
         {
             
-            byte[] userData_byte = Encoding.Unicode.GetBytes(userData);
-            string userData_lenght = userData_byte.Length.ToString();
-            byte[] userData_lenght_byte = Encoding.Unicode.GetBytes(userData_lenght);
-            stream.Write(userData_lenght_byte, 0, userData_lenght_byte.Length);
+            byte[] userDataByte = Encoding.Unicode.GetBytes(userData);
+            string userDataLenght = userDataByte.Length.ToString();
+            byte[] userDataLenghtByte = Encoding.Unicode.GetBytes(userDataLenght);
+            stream.Write(userDataLenghtByte, 0, userDataLenghtByte.Length);
             stream.Read(wait1, 0, wait1.Length);
-            stream.Write(userData_byte, 0, userData_byte.Length);
+            stream.Write(userDataByte, 0, userDataByte.Length);
         }
     }
 }

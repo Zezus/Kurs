@@ -6,4 +6,18 @@
     <Password>admin</Password>
     <Count>0</Count>
   </User>
+  <User>
+    <Login>repars</Login>
+    <Mail>repars@mail.ru</Mail>
+    <Name>repars</Name>
+    <Password>fac1a9ae93478466ae2a30f7e77f251a</Password>
+    <Message>
+	7:53	d  
+	7:53	dsf  
+	7:53	sdf  
+	7:53	привет  
+	7:53	в  
+	7:53	d  </Message>
+    <Count>6</Count>
+  </User>
 </ArrayOfUser>

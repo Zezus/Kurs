@@ -1,29 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace KursTest
 {
     /// <summary>
     /// Логика взаимодействия для PageChat.xaml
     /// </summary>
-    public partial class PageChat : Page
+    public partial class PageChat
     {
-        TcpClient client;
-        NetworkStream stream;
+        TcpClient _client;
+        NetworkStream _stream;
         int count = 1;
         Methods method = new Methods();
 
@@ -39,36 +29,36 @@ namespace KursTest
             var result = (MessageBox.Show("Вы уверены что хотите выйти из аккаунта", "Really", MessageBoxButton.YesNo, MessageBoxImage.Question));
             if (result == MessageBoxResult.Yes)
             {
-                ((ContentControl)(this.Parent)).Content = new PageMain();
+                ((ContentControl)Parent).Content = new PageMain();
             }
 
         }
 
         public void Sender(string s)
         {
-            client = new TcpClient();
-            client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
-            stream = client.GetStream();
+            _client = new TcpClient();
+            _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+            _stream = _client.GetStream();
 
             //отправляем тип активной страницы
-            string typePage = this.GetType().ToString();
-            method.TypePage(stream, typePage);
+            string typePage = GetType().ToString();
+            method.TypePage(_stream, typePage);
 
             //отправляем смс
             string sms = s;
-            method.Send(stream, sms);
+            method.Send(_stream, sms);
         }
 
 
         public void ButtonSend(object sender, RoutedEventArgs e)
         {
-            client = new TcpClient();
-            client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
-            stream = client.GetStream();
+            _client = new TcpClient();
+            _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+            _stream = _client.GetStream();
 
             //отправляем тип активной страницы
-            string typePage = this.GetType().ToString();
-            method.TypePage(stream, typePage);
+            string typePage = GetType().ToString();
+            method.TypePage(_stream, typePage);
 
             //count++;
             string time = DateTime.Now.ToString("h:mm tt");
@@ -76,7 +66,7 @@ namespace KursTest
 
             //отправляем смс и время и счетчик
             string sms = time + " " + tbSend.Text + " " + count.ToString();
-            method.Send(stream, sms);
+            method.Send(_stream, sms);
 
             tbChat.AppendText(smsView + Environment.NewLine);
             tbSend.Clear();
@@ -108,11 +98,6 @@ namespace KursTest
                     ButtonSend(this, e);
                 }
             }
-        }
-
-        private void btSend_KeyUp(object sender, KeyEventArgs e)
-        {
-
         }
     }
 }
