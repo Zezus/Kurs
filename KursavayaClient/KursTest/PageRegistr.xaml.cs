@@ -1,4 +1,6 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
+using System.Net.Mail;
 using System.Net.Sockets;
 using System.Security.Cryptography;
 using System.Text;
@@ -76,10 +78,6 @@ namespace KursTest
                 _flag = false;
                 MessageBox.Show("Все поля должны быть заполнены", "Error", MessageBoxButton.OK);
             }
-
-
-
-
             return _flag;
         }
 
@@ -105,34 +103,64 @@ namespace KursTest
             return sBuilder.ToString();
         }
 
+        public bool EmailValid()
+        {
+            try
+            {
+                MailAddress from = new MailAddress("remind-password-bot@mail.ru");
+                MailAddress to = new MailAddress(tbMail.Text + cSelectmail.SelectedItem);
+                MailMessage mailSend = new MailMessage(from, to);
+                mailSend.Body = "<h2></h2>";
+                mailSend.IsBodyHtml = true;
+
+                SmtpClient smtp = new SmtpClient("smtp.mail.ru", 25);
+                smtp.Credentials = new NetworkCredential("remind-password-bot@mail.ru", "45626336rustam");
+                smtp.EnableSsl = true;
+                smtp.Send(mailSend);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         private void butRegistr_RegWin_Click(object sender, RoutedEventArgs e)
         {
             TestDate(tbLogin.Text, tbMail.Text, tbPassword.Password, tbRepeatPass.Password, tbName.Text);
-            if (_flag != true) return;
-            _client = new TcpClient();
-            _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
-            _stream = _client.GetStream();
-
-            //отправляем тип активной страницы
-            var typePage = GetType().ToString();
-            _method.TypePage(_stream, typePage);
-
-            //хешируем пароль 
-            var passHashed = GetMd5Hash(tbPassword.Password);
-            //ОТправляем данные с регистрации
-            var userData = tbLogin.Text + " " + passHashed + " " + tbName.Text + " " + tbMail.Text + cSelectmail.SelectedItem;
-            _method.Send(_stream, userData);
-                
-
-            byte[] otvetRegistra = new byte[2];
-            _stream.Read(otvetRegistra, 0, otvetRegistra.Length);
-            string yesNo = Encoding.Unicode.GetString(otvetRegistra);
-            if (yesNo == "0")
+            if (EmailValid())
             {
-                ((ContentControl)Parent).Content = new PageMain();
-                MessageBox.Show("Регистрация прошла успешно, теперь вы можете войти в чат", "Goog Job", MessageBoxButton.OK); tbLogin.Clear();
+                if (_flag != true) return;
+                _client = new TcpClient();
+                _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+                _stream = _client.GetStream();
+
+                //отправляем тип активной страницы
+                var typePage = GetType().ToString();
+                _method.TypePage(_stream, typePage);
+
+                //хешируем пароль 
+                var passHashed = GetMd5Hash(tbPassword.Password);
+                //ОТправляем данные с регистрации
+                var userData = tbLogin.Text + " " + passHashed + " " + tbName.Text + " " + tbMail.Text +
+                               cSelectmail.SelectedItem;
+                _method.Send(_stream, userData);
+
+
+                byte[] otvetRegistra = new byte[2];
+                _stream.Read(otvetRegistra, 0, otvetRegistra.Length);
+                string yesNo = Encoding.Unicode.GetString(otvetRegistra);
+                if (yesNo == "0")
+                {
+                    ((ContentControl)Parent).Content = new PageMain();
+                    MessageBox.Show("Регистрация прошла успешно, теперь вы можете войти в чат", "Goog Job",
+                        MessageBoxButton.OK);
+                    tbLogin.Clear();
+                }
+                else MessageBox.Show("Пользователь с таким логином уже существует", "Error", MessageBoxButton.OK);
+                tbLogin.Clear();
             }
-            else MessageBox.Show("Пользователь с таким логином уже существует", "Error", MessageBoxButton.OK); tbLogin.Clear();
+            else MessageBox.Show("Данной почты не существует", "Error", MessageBoxButton.OK); tbMail.Clear();
         }
 
         private void butExit_RegPage_Click(object sender, RoutedEventArgs e)
@@ -142,7 +170,7 @@ namespace KursTest
         }
 
         private void tbName_TextChanged(object sender, TextChangedEventArgs e)
-         {
+        {
             if (tbName.Text.Length >= 6)
             {
                 _check6 = true;
@@ -151,7 +179,7 @@ namespace KursTest
             {
                 _check6 = false;
             }
-            if (tbName.Text.IndexOf(' ') == -1 && tbName.Text.Length!=0)
+            if (tbName.Text.IndexOf(' ') == -1 && tbName.Text.Length != 0)
             {
                 _checkProb = true;
             }

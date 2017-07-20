@@ -7,30 +7,52 @@
     <Count>0</Count>
   </User>
   <User>
-    <Login>repars</Login>
-    <Mail>repars@mail.ru</Mail>
-    <Name>repars</Name>
-    <Password>fac1a9ae93478466ae2a30f7e77f251a</Password>
+    <Login>sdfsdfsf</Login>
+    <Mail>rustam-sadvakaso@mail.ru</Mail>
+    <Name>sdfsdfsf</Name>
+    <Password>bce451618c93a32e69e7a774504d994c</Password>
     <Message>
-	7:53	d  
-	7:53	dsf  
-	7:53	sdf  
-	7:53	привет  
-	7:53	в  
-	7:53	d  </Message>
-    <Count>6</Count>
+	2:21	d  </Message>
+    <Count>1</Count>
   </User>
   <User>
-    <Login>тестн3</Login>
-    <Mail>тестн3@mail.ru</Mail>
-    <Name>тестн3</Name>
-    <Password>f3c7bdc82ae252ef29af5e02fa2c0bb7</Password>
+    <Login>sdfsdsssfsf</Login>
+    <Mail>rustam-sadvakaso@mail.ru</Mail>
+    <Name>sdfsdfsf</Name>
+    <Password>bce451618c93a32e69e7a774504d994c</Password>
     <Message>
-	8:32	ыфв  
-	8:32	ыы  
-	8:32	ы  
-	8:33	s  
-	8:33	ss  </Message>
-    <Count>5</Count>
+      2:21	d
+    </Message>
+    <Count>1</Count>
+  </User>
+  <User>
+    <Login>asdasd</Login>
+    <Mail>rustam-sadvakaso@mail.ru</Mail>
+    <Name>sdfsdfsf</Name>
+    <Password>bce451618c93a32e69e7a774504d994c</Password>
+    <Message>
+      2:21	d
+    </Message>
+    <Count>1</Count>
+  </User>
+  <User>
+    <Login>asdadasdasd</Login>
+    <Mail>rustam-sadvakaso@mail.ru</Mail>
+    <Name>sdfsdfsf</Name>
+    <Password>bce451618c93a32e69e7a774504d994c</Password>
+    <Message>
+      2:21	d
+    </Message>
+    <Count>1</Count>
+  </User>
+  <User>
+    <Login>pvsdpv</Login>
+    <Mail>rustam-sadvakaso@mail.ru</Mail>
+    <Name>sdfsdfsf</Name>
+    <Password>bce451618c93a32e69e7a774504d994c</Password>
+    <Message>
+      2:21	d
+    </Message>
+    <Count>1</Count>
   </User>
 </ArrayOfUser>

@@ -25,6 +25,7 @@ namespace KursTest
         string _name;
         string _password;
         string _countMes;
+        string _count;
         List<User> _listuser;
         readonly Methods _method = new Methods();
 
@@ -46,15 +47,7 @@ namespace KursTest
             string typePage = GetType().ToString();
             _method.TypePage(_stream, typePage);
 
-            /*#region Отправляем название кнопки которая нажата
-            var methodType = System.Reflection.MethodBase.GetCurrentMethod().Name;
-            byte[] methodType_byte = Encoding.Unicode.GetBytes(methodType);
-            string methodType_lenght = methodType_byte.Length.ToString();
-            byte[] methodType_lenght_byte = Encoding.Unicode.GetBytes(methodType_lenght);
-            stream.Write(methodType_lenght_byte, 0, methodType_lenght_byte.Length);
-            stream.Read(wait1, 0, wait1.Length);
-            stream.Write(methodType_byte, 0, methodType_byte.Length);
-            #endregion*/
+            //Отправляем название кнопки которая нажата
             var methodType = System.Reflection.MethodBase.GetCurrentMethod().Name;
             _method.Send(_stream, methodType);
 
@@ -66,11 +59,11 @@ namespace KursTest
 
             byte[] countLenghtEnd = new byte[int.Parse(countLenght)];
             _stream.Read(countLenghtEnd, 0, countLenghtEnd.Length);
-            string count = Encoding.Unicode.GetString(countLenghtEnd);
+            _count = Encoding.Unicode.GetString(countLenghtEnd);
 
-            _listuser = new List<User>(int.Parse(count));
+            _listuser = new List<User>(int.Parse(_count));
 
-            for (int i = 0; i < int.Parse(count); i++)
+            for (int i = 0; i < int.Parse(_count); i++)
             {
                 byte[] lognameBuff = new byte[Buffersize];
                 _stream.Read(lognameBuff, 0, lognameBuff.Length);
@@ -128,25 +121,35 @@ namespace KursTest
             var result = (MessageBox.Show("Вы уверены что хотите удалить данного пользователя", "Really", MessageBoxButton.YesNo, MessageBoxImage.Question));
             if (result == MessageBoxResult.Yes)
             {
-                var item = lbtest.SelectedItems;
-                var itemsMas = item[0].ToString().Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
-                string items = itemsMas[1];
+                var items = lbtest.SelectedItems;
+                var itemsMas = items[0].ToString().Split(new[] {' ', '\t'}, StringSplitOptions.RemoveEmptyEntries);
+                string item = itemsMas[1];
                 foreach (var v in lbtest.SelectedItems)
                 {
                     lbtest.Items.Remove(v);
                     break;
                 }
-                tbInfo.Clear(); tbViewMessages.Clear();
-                tbInfo.IsEnabled = false; tbViewMessages.IsEnabled = false;
+                tbInfo.Clear();
+                tbViewMessages.Clear();
+                tbInfo.IsEnabled = false;
+                tbViewMessages.IsEnabled = false;
 
-                byte[] selectedByte = Encoding.Unicode.GetBytes(items);
+                byte[] selectedByte = Encoding.Unicode.GetBytes(item);
                 string selectedLenght = selectedByte.Length.ToString();
                 byte[] selectedLenghtByte = Encoding.Unicode.GetBytes(selectedLenght);
                 _stream.Write(selectedLenghtByte, 0, selectedLenghtByte.Length);
                 _stream.Read(_wait1, 0, _wait1.Length);
                 _stream.Write(selectedByte, 0, selectedByte.Length);
-            }
 
+                User deleteFromList = _listuser.First(x => x.Login == item);
+                _listuser.Remove(deleteFromList);
+                lbtest.Items.Clear();
+                for (int i = 0; i < _listuser.Count; i++)
+                {
+                    lbtest.Items.Add($"{i + 1}.\t  {_listuser[i].Login}");
+
+                }
+            }
         }
         public void ViewMessages()
         {

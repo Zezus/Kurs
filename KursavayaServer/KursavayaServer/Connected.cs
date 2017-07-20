@@ -52,7 +52,7 @@ namespace KursavayaServer
             _stream.Read(typeSms, 0, typeSms.Length);
             string type = Encoding.Unicode.GetString(typeSms);
 
-            Console.WriteLine($"Принял:\tТип окна от которого пришло сообщение  {type} ");
+            Console.WriteLine($"Принял:\tТип окна от которого пришло сообщение  {type}  ");
             return type;
         }
 
