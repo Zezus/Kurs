@@ -135,6 +135,8 @@ namespace KursTest
                 _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
                 _stream = _client.GetStream();
 
+                User user = new User();
+
                 //отправляем тип активной страницы
                 var typePage = GetType().ToString();
                 _method.TypePage(_stream, typePage);
@@ -143,7 +145,7 @@ namespace KursTest
                 var passHashed = GetMd5Hash(tbPassword.Password);
                 //ОТправляем данные с регистрации
                 var userData = tbLogin.Text + " " + passHashed + " " + tbName.Text + " " + tbMail.Text +
-                               cSelectmail.SelectedItem;
+                               cSelectmail.SelectedItem + " " + user.CreatedAt + " " + user.ModifiedAt;
                 _method.Send(_stream, userData);
 
 

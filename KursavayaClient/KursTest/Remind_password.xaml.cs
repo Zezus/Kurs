@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Net.Sockets;
+using System.Security.Cryptography;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -18,7 +19,7 @@ namespace KursTest
         string _kod;
         bool _flag = true;
         byte[] wait1 = new byte[1];
-        Methods method = new Methods();
+        private readonly Methods _method = new Methods();
 
         public RemindPassword()
         {
@@ -42,15 +43,16 @@ namespace KursTest
 
             //отправляем тип активной страницы
             string typePage = GetType().ToString();
-            method.TypePage(_stream, typePage);
+            _method.TypePage(_stream, typePage);
 
             //отправляем данные с tbLogin
             string userData = tbLogin.Text;
-            method.Send(_stream, userData);
+            _method.Send(_stream, userData);
+
 
             //Отправляем название кнопки которая нажата
             var methodType = System.Reflection.MethodBase.GetCurrentMethod().Name;
-            method.Send(_stream, methodType);
+            _method.Send(_stream, methodType);
 
 
             byte[] otvetRegistra = new byte[2];
@@ -202,6 +204,29 @@ namespace KursTest
             return _flag;
         }
 
+        private static string GetMd5Hash(string input)
+        {
+            MD5 md5Hash = MD5.Create();
+
+            // Convert the input string to a byte array and compute the hash.
+            byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
+
+            // Create a new Stringbuilder to collect the bytes
+            // and create a string.
+            StringBuilder sBuilder = new StringBuilder();
+
+            // Loop through each byte of the hashed data 
+            // and format each one as a hexadecimal string.
+            for (int i = 0; i < data.Length; i++)
+            {
+                sBuilder.Append(data[i].ToString("x2"));
+            }
+
+            // Return the hexadecimal string.
+            return sBuilder.ToString();
+        }
+
+
         private void btChangePas_Click(object sender, RoutedEventArgs e)
         {
             TestPas(tbPas.Text, tbRepPas.Text);
@@ -211,22 +236,23 @@ namespace KursTest
                 _client = new TcpClient();
                 _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
                 _stream = _client.GetStream();
+                User user = new User();
 
                 //отправляем тип активной страницы
                 string typePage = GetType().ToString();
-                method.TypePage(_stream, typePage);
+                _method.TypePage(_stream, typePage);
 
                 //отправляем данные с tbLogin
                 string userData = tbLogin.Text;
-                method.Send(_stream, userData);
+                _method.Send(_stream, userData);
 
                 //Отправляем название кнопки которая нажата
                 var methodType = System.Reflection.MethodBase.GetCurrentMethod().Name;
-                method.Send(_stream, methodType);
+                _method.Send(_stream, methodType);
 
                 //отправляем данные с tbPas
-                string pas = tbPas.Text;
-                method.Send(_stream, pas);
+                var passHashed = GetMd5Hash(tbPas.Text);
+                _method.Send(_stream, passHashed + " " + user.ModifiedAt);
 
                 tbPas.Clear();
                 tbRepPas.Clear();

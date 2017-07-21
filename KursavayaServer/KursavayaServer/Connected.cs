@@ -23,6 +23,8 @@ namespace KursavayaServer
         private string _password;
         private string _name;
         private string _countMes;
+        private string _createTime;
+        private string _modifiedTime;
         private String[] _dateMas;
         private String[] _smsMas;
         private User _user;
@@ -58,6 +60,7 @@ namespace KursavayaServer
 
         public string Data()
         {
+
             byte[] dataLenght = new byte[Buffersize];
             _stream.Read(dataLenght, 0, dataLenght.Length);
             string dataSmsLenght = Encoding.Unicode.GetString(dataLenght);
@@ -99,9 +102,11 @@ namespace KursavayaServer
                 _password = _dateMas[1];
                 _name = _dateMas[2];
                 _mail = _dateMas[3];
+                _createTime = _dateMas[4] + " " + _dateMas[5];
+                _modifiedTime = _dateMas[7] + " " + _dateMas[8];
                 var storage = new XmlStorage("UserBase.xml");
                 var users = storage.Load();
-                users.Add(new User() { Login = _login, Name = _name, Password = _password, Mail = _mail });
+                users.Add(new User() { Login = _login, Name = _name, Password = _password, Mail = _mail, CreatedAt = _createTime, ModifiedAt = _modifiedTime });
                 storage.Save(users);
 
 
@@ -396,6 +401,7 @@ namespace KursavayaServer
             var storage = new XmlStorage("UserBase.xml");
             var users = storage.Load();
 
+
             #region Прием названия кнопки которая нажата в "Remind"
             //stream.Write(wait1, 0, wait1.Length);
             byte[] methodTypeByteLenght = new byte[Buffersize];
@@ -403,7 +409,6 @@ namespace KursavayaServer
             string methodTypeLenght = Encoding.Unicode.GetString(methodTypeByteLenght);
             int methodTypeBuffLenght = int.Parse(methodTypeLenght);
             byte[] methodTypeByte = new byte[methodTypeBuffLenght];
-
             _stream.Write(_wait1, 0, _wait1.Length);
 
             _stream.Read(methodTypeByte, 0, methodTypeByte.Length);
@@ -469,11 +474,13 @@ namespace KursavayaServer
                 byte[] pasByte = new byte[pasBuffLenght];
                 _stream.Write(_wait1, 0, _wait1.Length);
                 _stream.Read(pasByte, 0, pasByte.Length);
-                var pas = Encoding.Unicode.GetString(pasByte);
+                var pas_time = Encoding.Unicode.GetString(pasByte);
+                var pasTime = pas_time.Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
                 #endregion
 
                 User p = users.First(x => x.Login == _login);
-                p.Password = pas;
+                p.Password = pasTime[0];
+                p.ModifiedAt = pasTime[1] + " " + pasTime[2];
                 users.Add(p);
                 storage.Save(users);
                 List<User> listUser = new List<User>();

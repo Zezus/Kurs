@@ -37,8 +37,9 @@ namespace KursavayaServer
                 {
                     Connected.PageAdmin();
                 }
-                if (type == "KursTest.Remind_password")
+                if (type == "KursTest.RemindPassword")
                 {
+
                     Connected.Data();
                     var boool = Connected.YesNoRemimdPas();
                     Connected.PageRemimdPas(boool);

@@ -22,7 +22,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="bin/Debug/admin2.jpg"/>
         </Grid.Background>
-        <Button x:Name="btLoadUsers" Content="    Загрузить &#xA;пользователей" HorizontalAlignment="Left" Margin="10,351,0,0" VerticalAlignment="Top" Width="143" Click="ButtonLoadUsers" Height="44" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB70000" BorderBrush="#FF08C1FF" Foreground="White"/>
+        <Button x:Name="btLoadUsers" Content="    Загрузить &#xA;пользователей" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" Width="143" Click="ButtonLoadUsers" Height="44" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB70000" BorderBrush="#FF08C1FF" Foreground="White"/>
         <ListView x:Name="lvUsersName" Margin="-260,66,0,0" HorizontalAlignment="Left" Height="123"  VerticalAlignment="Top" Width="184" SelectionChanged="lvUsersName_SelectionChanged" Foreground="Red" Background="{x:Null}" BorderBrush="{x:Null}">
             <ListView.View>
                 <GridView>
@@ -31,11 +31,11 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="btDel" Content="     Удалить&#xA; пользователя" HorizontalAlignment="Left" Margin="243,351,0,0" VerticalAlignment="Top" Width="139" Click="ButtonDelete" Height="44" Background="#FFB70000" Foreground="White" BorderBrush="#FF08C1FF"/>
+        <Button x:Name="btDel" Content="     Удалить&#xA; пользователя" HorizontalAlignment="Left" Margin="243,333,0,0" VerticalAlignment="Top" Width="139" Click="ButtonDelete" Height="44" Background="#FFB70000" Foreground="White" BorderBrush="#FF08C1FF"/>
         <TextBox x:Name="tbInfo" HorizontalAlignment="Left" Height="29" Margin="243,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Foreground="White" BorderBrush="Red" Background="{x:Null}" IsReadOnly="True"/>
         <Button Content="Выход" HorizontalAlignment="Left" Margin="504,10,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click_2" Background="{x:Null}" Foreground="Red" BorderBrush="{x:Null}" FontSize="16" FontWeight="Bold"/>
         <TextBox x:Name="tbViewMessages" HorizontalAlignment="Left" Height="106" Margin="243,196,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="201" IsReadOnly="True" Background="{x:Null}" BorderBrush="Red" Foreground="White"/>
-        <ListBox x:Name="lbtest" HorizontalAlignment="Left" Height="281" Margin="10,65,0,0" VerticalAlignment="Top" Width="199" Foreground="White" SelectionChanged="lbtest_SelectionChanged" Background="{x:Null}"/>
+        <ListBox x:Name="lbtest" HorizontalAlignment="Left" Height="263" Margin="10,65,0,0" VerticalAlignment="Top" Width="199" Foreground="White" SelectionChanged="lbtest_SelectionChanged" Background="{x:Null}"/>
         <Label Content="№               Login" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="199" Foreground="Red"/>
 
 
