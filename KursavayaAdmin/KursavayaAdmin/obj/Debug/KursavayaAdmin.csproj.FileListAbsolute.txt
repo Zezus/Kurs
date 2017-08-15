@@ -1,0 +1,14 @@
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\bin\Debug\KursavayaAdmin.exe.config
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\bin\Debug\KursavayaAdmin.exe
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\bin\Debug\KursavayaAdmin.pdb
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\obj\Debug\KursavayaAdmin.csprojResolveAssemblyReference.cache
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\obj\Debug\MainWindow.g.cs
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\obj\Debug\App.g.cs
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\obj\Debug\KursavayaAdmin_MarkupCompile.cache
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\obj\Debug\KursavayaAdmin_MarkupCompile.lref
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\obj\Debug\MainWindow.baml
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\obj\Debug\KursavayaAdmin.g.resources
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\obj\Debug\KursavayaAdmin.Properties.Resources.resources
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\obj\Debug\KursavayaAdmin.csproj.GenerateResource.Cache
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\obj\Debug\KursavayaAdmin.exe
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaAdmin\KursavayaAdmin\obj\Debug\KursavayaAdmin.pdb
