@@ -27,6 +27,7 @@ namespace KursTest
         public PageRegistr()
         {
             InitializeComponent();
+            butRegistr_RegWin.IsEnabled = false;
         }
 
         public bool TestDate(string log, string mail, string pas, string repPas, string name)
@@ -336,8 +337,5 @@ namespace KursTest
             }
         }
 
-        private void cSelectmail_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-        }
     }
 }
