@@ -24,14 +24,10 @@ namespace KursTest
 
         public bool TestDate(string log, string pas)
         {
-            if (log == "admin" && pas == "admin")
+            if (log == "admin")
             {
-
-            }
-            else
-            {
-                int min = 6;
-                int max = 10;
+                int min = 1;
+                int max = 16;
                 if (log != "" && pas != "")
                 {
                     if (log.IndexOf(' ') == -1 && pas.IndexOf(' ') == -1)
@@ -45,7 +41,46 @@ namespace KursTest
                             else
                             {
                                 _flag = false;
-                                MessageBox.Show("Максимальная длина ввода 10 символов", "Error", MessageBoxButton.OK);
+                                MessageBox.Show("Максимальная длина ввода 16 символов", "Error", MessageBoxButton.OK);
+                            }
+                        }
+                        else
+                        {
+                            _flag = false;
+                            MessageBox.Show("Минимальная длина ввода 1 символов", "Error", MessageBoxButton.OK);
+                        }
+                    }
+                    else
+                    {
+                        _flag = false;
+                        MessageBox.Show("Нельзя вводить пробелы", "Error", MessageBoxButton.OK);
+
+                    }
+                }
+                else
+                {
+                    _flag = false;
+                    MessageBox.Show("Все поля должны быть заполнены", "Error", MessageBoxButton.OK);
+                }
+            }
+            else
+            {
+                int min = 6;
+                int max = 16;
+                if (log != "" && pas != "")
+                {
+                    if (log.IndexOf(' ') == -1 && pas.IndexOf(' ') == -1)
+                    {
+                        if (log.Length >= min && pas.Length >= min)
+                        {
+                            if (log.Length <= max && pas.Length <= max)
+                            {
+
+                            }
+                            else
+                            {
+                                _flag = false;
+                                MessageBox.Show("Максимальная длина ввода 16 символов", "Error", MessageBoxButton.OK);
                             }
                         }
                         else
@@ -92,7 +127,7 @@ namespace KursTest
                 string yesNo = Encoding.Unicode.GetString(otvetRegistra);
                 if (yesNo == "0")
                 {
-                    if (tbLogin.Text == "admin" && tbPassword.Password == "admin")
+                    if (tbLogin.Text == "admin")
                     {
                         ((ContentControl)Parent).Content = new PageAdmin();
                         MessageBox.Show("Авторизация прошла успешно, теперь вы можете войти в чат", "Goog Job", MessageBoxButton.OK);

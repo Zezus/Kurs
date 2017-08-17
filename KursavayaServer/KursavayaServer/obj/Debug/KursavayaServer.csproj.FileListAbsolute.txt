@@ -56,3 +56,10 @@ C:\Users\AZIA\Desktop\курсач проверка\KursavayaServer\KursavayaSer
 C:\Users\AZIA\Desktop\курсач проверка\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.csprojResolveAssemblyReference.cache
 C:\Users\AZIA\Desktop\курсач проверка\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.exe
 C:\Users\AZIA\Desktop\курсач проверка\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.pdb
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaServer\KursavayaServer\bin\Debug\XMLFile1.xml
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe.config
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.exe
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaServer\KursavayaServer\bin\Debug\KursavayaServer.pdb
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.csprojResolveAssemblyReference.cache
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.exe
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaServer\KursavayaServer\obj\Debug\KursavayaServer.pdb

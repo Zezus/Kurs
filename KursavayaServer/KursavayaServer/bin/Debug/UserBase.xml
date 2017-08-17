@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <User>
+   <User>
     <Login>admin</Login>
+    <Mail>remind-password-bot@mail.ru</Mail>
     <Name>admin</Name>
-    <Password>admin</Password>
+    <Password>0cc175b9c0f1b6a831c399e269772661</Password>
     <Count>0</Count>
   </User>
   <User>

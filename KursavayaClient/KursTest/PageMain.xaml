@@ -34,7 +34,7 @@
         <Button x:Name="butRegistr_MainPage" Content="Регистрация" Margin="346,247,0,0" Height="34" HorizontalAlignment="Left" Width="115" VerticalAlignment="Top" Click="butRegistr_Click" RenderTransformOrigin="0.36,1.155"/>
         <TextBox x:Name="tbIP" Margin="488,188,0,0" TextWrapping="Wrap" BorderBrush="#FF080808" Foreground="Red" ToolTip="Ip Adress" HorizontalAlignment="Left" Width="120" Height="27" VerticalAlignment="Top" IsUndoEnabled="True" RenderTransformOrigin="0.508,0.531" Background="Transparent" SelectionBrush="#FF9E241E"/>
         <Label x:Name="label_Copy1" Content="IP" Margin="409,192,0,0" Foreground="Red" HorizontalAlignment="Left" Width="52" Height="38" VerticalAlignment="Top" FontSize="14.667"/>
-        <PasswordBox x:Name="tbPassword" Margin="488,143,0,0" BorderBrush="#FF080808" Foreground="Red" ToolTip="Password" HorizontalAlignment="Left" Width="120" Height="27" VerticalAlignment="Top" Background="Transparent" SelectionBrush="#FF9E241E" MaxLength="10" PasswordChar="●" FontSize="12"/>
+        <PasswordBox x:Name="tbPassword" Margin="488,143,0,0" BorderBrush="#FF080808" Foreground="Red" ToolTip="Password" HorizontalAlignment="Left" Width="120" Height="27" VerticalAlignment="Top" Background="Transparent" SelectionBrush="#FF9E241E" MaxLength="16" PasswordChar="●" FontSize="12"/>
         <Button x:Name="btRememberPas" Content="Забыли пароль" HorizontalAlignment="Left" Margin="409,301,0,0" VerticalAlignment="Top" Width="133" Height="32" Click="ButtonRememberPas"/>
 
 

@@ -156,50 +156,101 @@ namespace KursTest
 
         public bool TestPas(string pas, string repPas)
         {
-            int min = 6;
-            int max = 16;
-            if (pas != "" && repPas != "")
+            if (tbLogin.Text == "admin")
             {
-                if (pas == repPas)
+                int min = 1;
+                int max = 16;
+                if (pas != "" && repPas != "")
                 {
-                    if (pas.IndexOf(' ') == -1 && repPas.IndexOf(' ') == -1)
+                    if (pas == repPas)
                     {
-                        if (pas.Length >= min && repPas.Length >= min)
+                        if (pas.IndexOf(' ') == -1 && repPas.IndexOf(' ') == -1)
                         {
-                            if (pas.Length <= max && repPas.Length <= max)
+                            if (pas.Length >= min && repPas.Length >= min)
                             {
+                                if (pas.Length <= max && repPas.Length <= max)
+                                {
 
+                                }
+                                else
+                                {
+                                    _flag = false;
+                                    MessageBox.Show("Максимальная длина ввода 16 символов", "Error", MessageBoxButton.OK);
+                                }
                             }
                             else
                             {
                                 _flag = false;
-                                MessageBox.Show("Максимальная длина ввода 16 символов", "Error", MessageBoxButton.OK);
+                                MessageBox.Show("Минимальная длина ввода 1 символов", "Error", MessageBoxButton.OK);
                             }
                         }
                         else
                         {
                             _flag = false;
-                            MessageBox.Show("Минимальная длина ввода 6 символов", "Error", MessageBoxButton.OK);
+                            MessageBox.Show("Нельзя вводить пробелы", "Error", MessageBoxButton.OK);
+
                         }
                     }
                     else
                     {
                         _flag = false;
-                        MessageBox.Show("Нельзя вводить пробелы", "Error", MessageBoxButton.OK);
+                        MessageBox.Show("Пароли не совпадают", "Error", MessageBoxButton.OK);
 
                     }
                 }
                 else
                 {
                     _flag = false;
-                    MessageBox.Show("Пароли не совпадают", "Error", MessageBoxButton.OK);
-
+                    MessageBox.Show("Все поля должны быть заполнены", "Error", MessageBoxButton.OK);
                 }
             }
             else
             {
-                _flag = false;
-                MessageBox.Show("Все поля должны быть заполнены", "Error", MessageBoxButton.OK);
+                int min = 6;
+                int max = 16;
+                if (pas != "" && repPas != "")
+                {
+                    if (pas == repPas)
+                    {
+                        if (pas.IndexOf(' ') == -1 && repPas.IndexOf(' ') == -1)
+                        {
+                            if (pas.Length >= min && repPas.Length >= min)
+                            {
+                                if (pas.Length <= max && repPas.Length <= max)
+                                {
+
+                                }
+                                else
+                                {
+                                    _flag = false;
+                                    MessageBox.Show("Максимальная длина ввода 16 символов", "Error", MessageBoxButton.OK);
+                                }
+                            }
+                            else
+                            {
+                                _flag = false;
+                                MessageBox.Show("Минимальная длина ввода 6 символов", "Error", MessageBoxButton.OK);
+                            }
+                        }
+                        else
+                        {
+                            _flag = false;
+                            MessageBox.Show("Нельзя вводить пробелы", "Error", MessageBoxButton.OK);
+
+                        }
+                    }
+                    else
+                    {
+                        _flag = false;
+                        MessageBox.Show("Пароли не совпадают", "Error", MessageBoxButton.OK);
+
+                    }
+                }
+                else
+                {
+                    _flag = false;
+                    MessageBox.Show("Все поля должны быть заполнены", "Error", MessageBoxButton.OK);
+                }
             }
             return _flag;
         }
