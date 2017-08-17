@@ -27,8 +27,6 @@ namespace KursTest
         public PageRegistr()
         {
             InitializeComponent();
-            cSelectmail.Items.Add("@mail.ru");
-            cSelectmail.Items.Add("@gmail.com");
         }
 
         public bool TestDate(string log, string mail, string pas, string repPas, string name)
@@ -108,7 +106,7 @@ namespace KursTest
             try
             {
                 MailAddress from = new MailAddress("remind-password-bot@mail.ru");
-                MailAddress to = new MailAddress(tbMail.Text + cSelectmail.SelectedItem);
+                MailAddress to = new MailAddress(tbMail.Text + mail_ru.Text);
                 MailMessage mailSend = new MailMessage(from, to);
                 mailSend.Body = "<h2></h2>";
                 mailSend.IsBodyHtml = true;
@@ -145,7 +143,7 @@ namespace KursTest
                 var passHashed = GetMd5Hash(tbPassword.Password);
                 //ОТправляем данные с регистрации
                 var userData = tbLogin.Text + " " + passHashed + " " + tbName.Text + " " + tbMail.Text +
-                               cSelectmail.SelectedItem + " " + user.CreatedAt + " " + user.ModifiedAt;
+                               mail_ru.Text + " " + user.CreatedAt + " " + user.ModifiedAt;
                 _method.Send(_stream, userData);
 
 

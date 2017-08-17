@@ -261,3 +261,33 @@ C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj
 C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\Kursavaya.csproj.GenerateResource.Cache
 C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\KursTest.exe
 C:\Users\AZIA\Desktop\курсач проверка\KursavayaClient\KursTest\obj\Debug\KursTest.pdb
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\Kursavaya.csprojResolveAssemblyReference.cache
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\MainWindow.g.cs
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\PageAdmin.g.cs
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\PageChat.g.cs
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\PageMain.g.cs
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\PageRegistr.g.cs
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\Remind_password.g.cs
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\App.g.cs
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.cache
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\KursTest_MarkupCompile.lref
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\KursTest.exe
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\KursTest.pdb
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\bin\Debug\KursTest.exe.config
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\bin\Debug\KursTest.exe
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\bin\Debug\KursTest.pdb
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\bin\Debug\MaterialDesignColors.pdb
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\App.baml
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\MainWindow.baml
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\PageAdmin.baml
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\PageChat.baml
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\PageMain.baml
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\PageRegistr.baml
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\Remind_password.baml
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\KursTest.g.resources
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\KursTest.Properties.Resources.resources
+C:\Users\СадвакасовР\Desktop\kurs\Kurs\KursavayaClient\KursTest\obj\Debug\Kursavaya.csproj.GenerateResource.Cache

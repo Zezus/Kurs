@@ -29,7 +29,7 @@
         <TextBox x:Name="tbLogin" Margin="100,98,0,0" TextWrapping="Wrap" BorderBrush="Red" Foreground="White" ToolTip="Login" HorizontalAlignment="Left" Width="120" Height="28" VerticalAlignment="Top" Background="Transparent" SelectionBrush="White" MaxLength="10" TextChanged="tbLogin_TextChanged"/>
         <Label x:Name="Login" Content="Login" Margin="21,99,0,0" Foreground="#DDFFFFFF" HorizontalAlignment="Left" Width="52" Height="27" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label x:Name="Password" Content="Password" Margin="21,198,0,0" Foreground="#DDFFFFFF" HorizontalAlignment="Left" Width="74" Height="27" VerticalAlignment="Top" RenderTransformOrigin="0.221,0.64" FontWeight="Bold"/>
-        <Label x:Name="RepeatPass" Content="Password" Margin="21,241,0,0" Foreground="#DDFFFFFF" HorizontalAlignment="Left" Width="74" Height="27" VerticalAlignment="Top" FontSize="14.667" FontWeight="Bold"/>
+        <Label x:Name="RepeatPass" Content="Password" Margin="21,243,0,0" Foreground="#DDFFFFFF" HorizontalAlignment="Left" Width="74" Height="27" VerticalAlignment="Top" RenderTransformOrigin="0.221,0.64" FontWeight="Bold"/>
         <Button x:Name="butRegistr_RegWin" Content="Зарегистрироваться" Margin="110,281,0,0" Height="32" HorizontalAlignment="Left" Width="150" VerticalAlignment="Top" Foreground="#DDFFFFFF" Background="#BFD41C1C" Padding="-2,4" Click="butRegistr_RegWin_Click" BorderBrush="Red"/>
         <Button x:Name="butExit_RegPage" Content="Назад" Margin="16,281,0,0" Height="32" HorizontalAlignment="Left" Width="73" VerticalAlignment="Top" Foreground="#DDFFFFFF" Background="#BFD41C1C" Padding="-2,4" Click="butExit_RegPage_Click" BorderBrush="Red"/>
         <PasswordBox x:Name="tbPassword" Margin="100,198,0,0" BorderBrush="Red" Foreground="White" ToolTip="Password" HorizontalAlignment="Left" Width="120" Height="27" VerticalAlignment="Top" Background="Transparent" SelectionBrush="White" MaxLength="10" PasswordChanged="tbPassword_PasswordChanged"/>
@@ -45,6 +45,6 @@
         <TextBox x:Name="v_RepPas" HorizontalAlignment="Left" Height="30" Margin="220,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" Foreground="Red" BorderBrush="{x:Null}" Background="{x:Null}" AutomationProperties.IsRowHeader="True" FontSize="20" TextDecorations="{x:Null}" IsReadOnly="True"/>
         <TextBox x:Name="tbMail" Margin="100,147,0,0" TextWrapping="Wrap" BorderBrush="Red" Foreground="White" ToolTip="Login" HorizontalAlignment="Left" Width="120" Height="28" VerticalAlignment="Top" Background="Transparent" SelectionBrush="White"/>
         <Label x:Name="Login_Copy" Content="Mail" Margin="21,147,0,0" Foreground="#DDFFFFFF" HorizontalAlignment="Left" Width="52" Height="27" VerticalAlignment="Top" FontWeight="Bold"/>
-        <ComboBox x:Name="cSelectmail" HorizontalAlignment="Left" Margin="220,147,0,0" VerticalAlignment="Top" Width="95" SelectionChanged="cSelectmail_SelectionChanged" Height="28" Foreground="White" Background="#00000000" BorderBrush="Red"/>
+        <TextBox x:Name="mail_ru" HorizontalAlignment="Left" Height="28" Margin="220,147,0,0" TextWrapping="Wrap" Text="@mail.ru" VerticalAlignment="Top" Width="61" Foreground="White" Background="#00000000" BorderBrush="Red" IsReadOnly="True"/>
     </Grid>
 </Page>
