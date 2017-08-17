@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using KursavayaAdmin;
+using Kursavaya;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -40,6 +40,78 @@ namespace KursavayaAdmin {
     /// </summary>
     public partial class PageMain : System.Windows.Controls.Page, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 22 "..\..\PageMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button butLogin_MainPage;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 23 "..\..\PageMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label LogIn;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 31 "..\..\PageMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox tbLogin;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 32 "..\..\PageMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label label;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 33 "..\..\PageMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label label_Copy;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 34 "..\..\PageMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox tbIP;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 35 "..\..\PageMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label label_Copy1;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 36 "..\..\PageMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.PasswordBox tbPassword;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 37 "..\..\PageMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button btRememberPas;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -68,6 +140,48 @@ namespace KursavayaAdmin {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
+            switch (connectionId)
+            {
+            case 1:
+            this.butLogin_MainPage = ((System.Windows.Controls.Button)(target));
+            
+            #line 22 "..\..\PageMain.xaml"
+            this.butLogin_MainPage.Click += new System.Windows.RoutedEventHandler(this.butLogin_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 2:
+            this.LogIn = ((System.Windows.Controls.Label)(target));
+            return;
+            case 3:
+            this.tbLogin = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 4:
+            this.label = ((System.Windows.Controls.Label)(target));
+            return;
+            case 5:
+            this.label_Copy = ((System.Windows.Controls.Label)(target));
+            return;
+            case 6:
+            this.tbIP = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 7:
+            this.label_Copy1 = ((System.Windows.Controls.Label)(target));
+            return;
+            case 8:
+            this.tbPassword = ((System.Windows.Controls.PasswordBox)(target));
+            return;
+            case 9:
+            this.btRememberPas = ((System.Windows.Controls.Button)(target));
+            
+            #line 37 "..\..\PageMain.xaml"
+            this.btRememberPas.Click += new System.Windows.RoutedEventHandler(this.ButtonRememberPas);
+            
+            #line default
+            #line hidden
+            return;
+            }
             this._contentLoaded = true;
         }
     }

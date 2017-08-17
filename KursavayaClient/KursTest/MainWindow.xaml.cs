@@ -20,16 +20,17 @@ namespace Kursavaya
             //Connect();
         }
 
-       /* public void Connect()
-        {
-            client = new TcpClient();
-            client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
-            stream = client.GetStream();
 
-            string a = "привет";
-            byte[] dataBytes = Encoding.Unicode.GetBytes(a);
-            stream.Write(dataBytes, 0, dataBytes.Length);
-           
-        }*/
+        /* public void Connect()
+         {
+             client = new TcpClient();
+             client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+             stream = client.GetStream();
+
+             string a = "привет";
+             byte[] dataBytes = Encoding.Unicode.GetBytes(a);
+             stream.Write(dataBytes, 0, dataBytes.Length);
+
+         }*/
     }
 }

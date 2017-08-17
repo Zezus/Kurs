@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using Kursavaya;
+using KursavayaAdmin;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -40,54 +40,6 @@ namespace KursavayaAdmin {
     /// </summary>
     public partial class PageAdmin : System.Windows.Controls.Page, System.Windows.Markup.IComponentConnector {
         
-        
-        #line 25 "..\..\PageAdmin.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button btLoadUsers;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 26 "..\..\PageAdmin.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ListView lvUsersName;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 34 "..\..\PageAdmin.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button btDel;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 35 "..\..\PageAdmin.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox tbInfo;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 37 "..\..\PageAdmin.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox tbViewMessages;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 38 "..\..\PageAdmin.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ListBox lbtest;
-        
-        #line default
-        #line hidden
-        
         private bool _contentLoaded;
         
         /// <summary>
@@ -116,59 +68,6 @@ namespace KursavayaAdmin {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
-            switch (connectionId)
-            {
-            case 1:
-            this.btLoadUsers = ((System.Windows.Controls.Button)(target));
-            
-            #line 25 "..\..\PageAdmin.xaml"
-            this.btLoadUsers.Click += new System.Windows.RoutedEventHandler(this.ButtonLoadUsers);
-            
-            #line default
-            #line hidden
-            return;
-            case 2:
-            this.lvUsersName = ((System.Windows.Controls.ListView)(target));
-            
-            #line 26 "..\..\PageAdmin.xaml"
-            this.lvUsersName.SelectionChanged += new System.Windows.Controls.SelectionChangedEventHandler(this.lvUsersName_SelectionChanged);
-            
-            #line default
-            #line hidden
-            return;
-            case 3:
-            this.btDel = ((System.Windows.Controls.Button)(target));
-            
-            #line 34 "..\..\PageAdmin.xaml"
-            this.btDel.Click += new System.Windows.RoutedEventHandler(this.ButtonDelete);
-            
-            #line default
-            #line hidden
-            return;
-            case 4:
-            this.tbInfo = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 5:
-            
-            #line 36 "..\..\PageAdmin.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click_2);
-            
-            #line default
-            #line hidden
-            return;
-            case 6:
-            this.tbViewMessages = ((System.Windows.Controls.TextBox)(target));
-            return;
-            case 7:
-            this.lbtest = ((System.Windows.Controls.ListBox)(target));
-            
-            #line 38 "..\..\PageAdmin.xaml"
-            this.lbtest.SelectionChanged += new System.Windows.Controls.SelectionChangedEventHandler(this.lbtest_SelectionChanged);
-            
-            #line default
-            #line hidden
-            return;
-            }
             this._contentLoaded = true;
         }
     }

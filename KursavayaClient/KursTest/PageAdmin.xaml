@@ -34,7 +34,7 @@
         <Button x:Name="btDel" Content="     Удалить&#xA; пользователя" HorizontalAlignment="Left" Margin="243,333,0,0" VerticalAlignment="Top" Width="139" Click="ButtonDelete" Height="44" Background="#FFB70000" Foreground="White" BorderBrush="#FF08C1FF"/>
         <TextBox x:Name="tbInfo" HorizontalAlignment="Left" Height="29" Margin="243,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Foreground="White" BorderBrush="Red" Background="{x:Null}" IsReadOnly="True"/>
         <Button Content="Выход" HorizontalAlignment="Left" Margin="504,10,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click_2" Background="{x:Null}" Foreground="Red" BorderBrush="{x:Null}" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="tbViewMessages" HorizontalAlignment="Left" Height="106" Margin="243,196,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="201" IsReadOnly="True" Background="{x:Null}" BorderBrush="Red" Foreground="White"/>
+        <TextBox x:Name="tbViewMessages" HorizontalAlignment="Left" Height="106" Margin="243,222,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="201" IsReadOnly="True" Background="{x:Null}" BorderBrush="Red" Foreground="White"/>
         <ListBox x:Name="lbtest" HorizontalAlignment="Left" Height="263" Margin="10,65,0,0" VerticalAlignment="Top" Width="199" Foreground="White" SelectionChanged="lbtest_SelectionChanged" Background="{x:Null}"/>
         <Label Content="№               Login" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="199" Foreground="Red"/>
 

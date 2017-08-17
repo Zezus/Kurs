@@ -1,4 +1,4 @@
-﻿<Window x:Class="Kursavaya.MainWindow"
+﻿<Window x:Name="MainWindow1" x:Class="Kursavaya.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -15,6 +15,5 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         Title="MainWindow" Height="460" Width="627">
     <Grid> 
-        <Frame Name="Main"/>
     </Grid>
 </Window>

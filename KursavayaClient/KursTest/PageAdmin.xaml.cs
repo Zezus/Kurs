@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using Kursavaya;
 
 namespace KursTest
 {
@@ -26,6 +27,8 @@ namespace KursTest
         string _password;
         string _countMes;
         string _count;
+        string _createTime;
+        string _modifiedTime;
         List<User> _listuser;
         readonly Methods _method = new Methods();
 
@@ -77,6 +80,9 @@ namespace KursTest
                 _name = _lognemaMas[1];
                 _password = _lognemaMas[2];
                 _countMes = _lognemaMas[3];
+                _createTime = _lognemaMas[4] + " " + _lognemaMas[5];
+                _modifiedTime = _lognemaMas[6] + " " + _lognemaMas[7];
+
 
                 lbtest.Items.Add($"{i + 1}.\t  {_login}");
 
@@ -93,12 +99,30 @@ namespace KursTest
                     byte[] mesBuff2 = new byte[int.Parse(mesLenght)];
                     _stream.Read(mesBuff2, 0, mesBuff2.Length);
                     string messageText = Encoding.Unicode.GetString(mesBuff2);
+
                     _messages = messageText;
-                    _listuser.Add(new User { Login = _login, Name = _name, Password = _password, Message = _messages, Count = _countMes });
+                    _listuser.Add(new User
+                    {
+                        Login = _login,
+                        Name = _name,
+                        Password = _password,
+                        Message = _messages,
+                        Count = _countMes,
+                        CreatedAt = DateTimeOffset.Parse(_createTime),
+                        ModifiedAt = DateTimeOffset.Parse(_modifiedTime)
+                    });
                 }
                 else
                 {
-                    _listuser.Add(new User { Login = _login, Name = _name, Password = _password, Count = _countMes });
+                    _listuser.Add(new User
+                    {
+                        Login = _login,
+                        Name = _name,
+                        Password = _password,
+                        Count = _countMes,
+                        CreatedAt = DateTimeOffset.Parse(_createTime),
+                        ModifiedAt = DateTimeOffset.Parse(_modifiedTime)
+                    });
                 }
             }
             btLoadUsers.IsEnabled = false;
@@ -177,7 +201,7 @@ namespace KursTest
 
 
                 var a = _listuser.First(i => i.Login == selected.Login);
-                tbInfo.AppendText($"Login: {a.Login}{Environment.NewLine}{Environment.NewLine}Name: {a.Name}{Environment.NewLine}{Environment.NewLine}Password: {a.Password}{Environment.NewLine}{Environment.NewLine}Количество сообщений: {a.Count}");
+                tbInfo.AppendText($"Login: {a.Login}{Environment.NewLine}{Environment.NewLine}Name: {a.Name}{Environment.NewLine}{Environment.NewLine}Password: {a.Password}{Environment.NewLine}{Environment.NewLine}Количество сообщений: {a.Count}{Environment.NewLine}{Environment.NewLine}Дата регистрации: {a.CreatedAt}{Environment.NewLine}{Environment.NewLine}Дата изменения: {a.ModifiedAt} ");
                 ViewMessages();
             }
             else
@@ -204,7 +228,8 @@ namespace KursTest
             var itemsMas = item[0].ToString().Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
             string items = itemsMas[1];
             var userDate = _listuser.First(x => x.Login == items);
-            tbViewMessages.AppendText(userDate.Message);
+            string sms= userDate.Message.Replace("\t"," ");
+            tbViewMessages.AppendText(sms);
         }
         private void lbtest_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -212,8 +237,10 @@ namespace KursTest
             btDel.IsEnabled = true;
             tbInfo.IsEnabled = true;
             tbInfo.Clear();
-            tbInfo.Height = 150;
-            tbInfo.Width = 201;
+            tbInfo.Height = 200;
+            tbInfo.Width = 270;
+            tbViewMessages.Width = 270;
+            
 
             var item = lbtest.SelectedItems;
             if (item.Count == 0)
@@ -227,8 +254,15 @@ namespace KursTest
                 if (item.Count != 0)
                 {
                     var a = _listuser.First(i => i.Login == items);
-                    tbInfo.AppendText($"Login: {a.Login}{Environment.NewLine}{Environment.NewLine}Name: {a.Name}{Environment.NewLine}{Environment.NewLine}Password: {a.Password}{Environment.NewLine}{Environment.NewLine}Количество сообщений: {a.Count}");
-                    ViewMessages2();
+                    tbInfo.AppendText($"Login: {a.Login}{Environment.NewLine}{Environment.NewLine}Name: {a.Name}{Environment.NewLine}{Environment.NewLine}Password: {a.Password}{Environment.NewLine}{Environment.NewLine}Количество сообщений: {a.Count}{Environment.NewLine}{Environment.NewLine}Дата регистрации: {a.CreatedAt.DateTime}{Environment.NewLine}{Environment.NewLine}Дата изменения: {a.ModifiedAt.DateTime}");
+                    if (a.Count!="0")
+                    {
+                        ViewMessages2();
+                    }
+                    else
+                    {
+                        tbViewMessages.Clear();
+                    }
                 }
                 else
                 {
