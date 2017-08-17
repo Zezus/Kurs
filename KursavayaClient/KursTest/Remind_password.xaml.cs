@@ -20,6 +20,8 @@ namespace KursTest
         bool _flag = true;
         byte[] wait1 = new byte[1];
         private readonly Methods _method = new Methods();
+        readonly PageMain _pm = new PageMain();
+
 
         public RemindPassword()
         {
@@ -38,7 +40,7 @@ namespace KursTest
         private void btOK_Click(object sender, RoutedEventArgs e)
         {
             _client = new TcpClient();
-            _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+            _client.Connect(new IPEndPoint(IPAddress.Parse(_pm.tbIP.Text), 3084));
             _stream = _client.GetStream();
 
             //отправляем тип активной страницы
@@ -285,7 +287,7 @@ namespace KursTest
             {
 
                 _client = new TcpClient();
-                _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+                _client.Connect(new IPEndPoint(IPAddress.Parse(_pm.tbIP.Text), 3084));
                 _stream = _client.GetStream();
                 User user = new User();
 

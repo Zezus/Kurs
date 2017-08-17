@@ -1,30 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-   <User>
-    <Login>admin</Login>
-    <Mail>remind-password-bot@mail.ru</Mail>
-    <Name>admin</Name>
-    <Password>0cc175b9c0f1b6a831c399e269772661</Password>
-    <Count>0</Count>
-  </User>
-  <User>
-    <Login>сыфсыф</Login>
-    <Mail>rustam-sadvakaso@mail.ru</Mail>
-    <Name>сыфсыф</Name>
-    <Password>c4ce90295cbd6defead10f3b037324e9</Password>
-    <Count>0</Count>
-    <CreatedAt>21.07.2017 16:41:21</CreatedAt>
-    <ModifiedAt>21.07.2017 16:41:21</ModifiedAt>
-  </User>
-  <User>
-    <Login>timeset2</Login>
-    <Mail>rustam-sadvakaso@mail.ru</Mail>
-    <Name>timeset2</Name>
-    <Password>f4c2675c1ddc8ed7c0af32da68004513</Password>
-    <Count>0</Count>
-    <CreatedAt>21.07.2017 15:52:12</CreatedAt>
-    <ModifiedAt>21.07.2017 16:54:53</ModifiedAt>
-  </User>
   <User>
     <Login>ывамывмыв</Login>
     <Mail>rustam-sadvakaso@mail.ru</Mail>
@@ -47,5 +22,61 @@
     <Count>13</Count>
     <CreatedAt>17.08.2017 16:05:14</CreatedAt>
     <ModifiedAt>17.08.2017 17:48:39</ModifiedAt>
+  </User>
+  <User>
+    <Login>сыфсыф</Login>
+    <Mail>rustam-sadvakaso@mail.ru</Mail>
+    <Name>сыфсыф</Name>
+    <Password>c4ce90295cbd6defead10f3b037324e9</Password>
+    <Message>
+  1:54    fdsfdsf  
+  1:54    sdfsdfjksd  
+  1:54    dsf  
+  1:54    sdf  
+  1:54    sd  
+  1:54    f sd  
+  1:54    f  
+  1:54    sdf  
+  1:54    sd  
+  1:54    f  
+  1:54    sdfsdf  
+  1:54    sd  
+  1:54    fsd  
+  1:54    sd  
+  1:54    fsd  
+  1:54    sdfsd  
+  1:54    f  
+  1:54    dsfsd  
+  1:54    sdfsd  
+  1:54    dsfsd  
+  1:54    sdf  
+  1:54    sdf  
+  1:54    dsf  
+  1:54    sdf  
+  1:54    dsfdsf  
+  1:54    sdfsd  
+  1:54    sdfsdf  </Message>
+    <Count>27</Count>
+    <CreatedAt>21.07.2017 16:41:21</CreatedAt>
+    <ModifiedAt>21.07.2017 16:41:21</ModifiedAt>
+  </User>
+  <User>
+    <Login>admin</Login>
+    <Mail>remind-password-bot@mail.ru</Mail>
+    <Name>admin</Name>
+    <Password>21232f297a57a5a743894a0e4a801fc3</Password>
+    <Count>0</Count>
+    <ModifiedAt>18.08.2017 2:06:58</ModifiedAt>
+  </User>
+  <User>
+    <Login>ыыыыыыыыыы</Login>
+    <Mail>rustam-sadvakaso@mail.ru</Mail>
+    <Name>ыыыыыыыыыы</Name>
+    <Password>7cb327e4d0dae22f186ee8b4c9650e07</Password>
+    <Message>
+  2:21    ыфвфыв  </Message>
+    <Count>1</Count>
+    <CreatedAt>18.08.2017 2:21:17</CreatedAt>
+    <ModifiedAt>18.08.2017 2:21:17</ModifiedAt>
   </User>
 </ArrayOfUser>

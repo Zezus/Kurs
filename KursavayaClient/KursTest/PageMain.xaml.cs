@@ -17,6 +17,7 @@ namespace KursTest
         bool _flag = true;
         Methods method = new Methods();
 
+
         public PageMain()
         {
             InitializeComponent();
@@ -111,7 +112,7 @@ namespace KursTest
             if (_flag)
             {
                 _client = new TcpClient();
-                _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+                _client.Connect(new IPEndPoint(IPAddress.Parse(tbIP.Text), 3084));
                 _stream = _client.GetStream();
 
                 //отправляем тип активной страницы

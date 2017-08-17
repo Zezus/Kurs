@@ -6,8 +6,6 @@ using System.Net.Sockets;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
-using Kursavaya;
 
 namespace KursTest
 {
@@ -31,6 +29,8 @@ namespace KursTest
         string _modifiedTime;
         List<User> _listuser;
         readonly Methods _method = new Methods();
+        readonly PageMain _pm = new PageMain();
+
 
         public PageAdmin()
         {
@@ -43,7 +43,7 @@ namespace KursTest
         private void ButtonLoadUsers(object sender, RoutedEventArgs e)
         {
             _client = new TcpClient();
-            _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+            _client.Connect(new IPEndPoint(IPAddress.Parse(_pm.tbIP.Text), 3084));
             _stream = _client.GetStream();
 
             //отправляем тип активной страницы
@@ -131,7 +131,7 @@ namespace KursTest
         private void ButtonDelete(object sender, RoutedEventArgs e)
         {
             _client = new TcpClient();
-            _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+            _client.Connect(new IPEndPoint(IPAddress.Parse(_pm.tbIP.Text), 3084));
             _stream = _client.GetStream();
 
             //отправляем тип активной страницы
@@ -175,42 +175,7 @@ namespace KursTest
                 }
             }
         }
-        public void ViewMessages()
-        {
-            tbViewMessages.IsEnabled = true;
-            tbViewMessages.Clear();
-            var items = lvUsersName.SelectedItems;
-            User selected = (User)items[0];
-            var userDate = _listuser.First(x => x.Login == selected.Login);
-            tbViewMessages.AppendText(userDate.Message);
-        }
-
-        private void lvUsersName_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            lvUsersName.Background = Brushes.Red;
-            btDel.IsEnabled = true;
-            tbInfo.IsEnabled = true;
-            tbInfo.Clear();
-            tbInfo.Height = 150;
-            tbInfo.Width = 270;
-
-            var items = lvUsersName.SelectedItems;
-            if (items.Count != 0)
-            {
-                User selected = (User)items[0];
-
-
-                var a = _listuser.First(i => i.Login == selected.Login);
-                tbInfo.AppendText($"Login: {a.Login}{Environment.NewLine}{Environment.NewLine}Name: {a.Name}{Environment.NewLine}{Environment.NewLine}Password: {a.Password}{Environment.NewLine}{Environment.NewLine}Количество сообщений: {a.Count}{Environment.NewLine}{Environment.NewLine}Дата регистрации: {a.CreatedAt}{Environment.NewLine}{Environment.NewLine}Дата изменения: {a.ModifiedAt} ");
-                ViewMessages();
-            }
-            else
-            {
-                btDel.IsEnabled = false;
-            }
-
-        }
-
+        
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             var result = (MessageBox.Show("Вы уверены что хотите выйти?", "Really", MessageBoxButton.YesNo, MessageBoxImage.Question));
@@ -233,7 +198,6 @@ namespace KursTest
         }
         private void lbtest_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            lvUsersName.Background = Brushes.Red;
             btDel.IsEnabled = true;
             tbInfo.IsEnabled = true;
             tbInfo.Clear();

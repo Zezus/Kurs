@@ -23,17 +23,18 @@ namespace KursTest
         private bool _checkProb;
         private bool _checkRepPas;
         private readonly Methods _method = new Methods();
+        readonly PageMain _pm = new PageMain();
+
 
         public PageRegistr()
         {
             InitializeComponent();
-            butRegistr_RegWin.IsEnabled = false;
         }
 
         public bool TestDate(string log, string mail, string pas, string repPas, string name)
         {
             int min = 6;
-            int max = 10;
+            int max = 16;
             if (log != "" && pas != "" && repPas != "" && name != "" && mail != "")
             {
                 if (pas == repPas)
@@ -49,13 +50,13 @@ namespace KursTest
                             else
                             {
                                 _flag = false;
-                                MessageBox.Show("Максимальная длина ввода 10 символов", "Error", MessageBoxButton.OK);
+                                MessageBox.Show("Максимальная длина ввода 16 символов", "Error", MessageBoxButton.OK);
                             }
                         }
                         else
                         {
                             _flag = false;
-                            MessageBox.Show("Минимальная длина ввода 6 символов (поле name 4 символа)", "Error", MessageBoxButton.OK);
+                            MessageBox.Show("Минимальная длина ввода 6 символов", "Error", MessageBoxButton.OK);
                         }
                     }
                     else
@@ -131,7 +132,7 @@ namespace KursTest
             {
                 if (_flag != true) return;
                 _client = new TcpClient();
-                _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+                _client.Connect(new IPEndPoint(IPAddress.Parse(_pm.tbIP.Text), 3084));
                 _stream = _client.GetStream();
 
                 User user = new User();
@@ -336,6 +337,5 @@ namespace KursTest
                 v_RepPas.Text = "◄";
             }
         }
-
     }
 }

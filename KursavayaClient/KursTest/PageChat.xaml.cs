@@ -16,6 +16,8 @@ namespace KursTest
         NetworkStream _stream;
         int count = 1;
         Methods method = new Methods();
+        readonly PageMain _pm = new PageMain();
+
 
 
         public PageChat()
@@ -30,6 +32,7 @@ namespace KursTest
             if (result == MessageBoxResult.Yes)
             {
                 ((ContentControl)Parent).Content = new PageMain();
+
             }
 
         }
@@ -37,7 +40,7 @@ namespace KursTest
         public void Sender(string s)
         {
             _client = new TcpClient();
-            _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+            _client.Connect(new IPEndPoint(IPAddress.Parse(_pm.tbIP.Text), 3084));
             _stream = _client.GetStream();
 
             //отправляем тип активной страницы
@@ -53,7 +56,7 @@ namespace KursTest
         public void ButtonSend(object sender, RoutedEventArgs e)
         {
             _client = new TcpClient();
-            _client.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3084));
+            _client.Connect(new IPEndPoint(IPAddress.Parse(_pm.tbIP.Text), 3084));
             _stream = _client.GetStream();
 
             //отправляем тип активной страницы

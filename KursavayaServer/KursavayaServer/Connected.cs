@@ -190,7 +190,7 @@ namespace KursavayaServer
             {
                 if (_login == item.Login)
                 {
-                    if (_login == "admin" && _password == "admin")
+                    if (item.Login == "admin" && item.Password == _password)
                     {
                         hashpass = true;
                     }
@@ -326,37 +326,7 @@ namespace KursavayaServer
                 _stream.Read(_wait1, 0, _wait1.Length);
                 _stream.Write(countByte, 0, countByte.Length);
 
-                /*for (int i = 0; i < users.Count; i++)
-                {
-                    byte[] lognameByte = Encoding.Unicode.GetBytes(users[i].Login + " " + users[i].Name + " " + users[i].Password + " " + users[i].Count.ToString() + " " + users[i].CreatedAt + " " + users[i].ModifiedAt);
-                    byte[] lognameLenght = Encoding.Unicode.GetBytes(lognameByte.Length.ToString());
-                    _stream.Write(lognameLenght, 0, lognameLenght.Length);
-                    _stream.Read(_wait1, 0, _wait1.Length);
-                    _stream.Write(lognameByte, 0, lognameByte.Length);
-
-
-                    if (users[i].Message != null)
-                    {
-                        string otvet = "0";
-                        byte[] otvetRegistra = Encoding.Unicode.GetBytes(otvet);
-                        _stream.Write(otvetRegistra, 0, otvetRegistra.Length);
-
-                        _stream.Read(_wait1, 0, _wait1.Length);
-
-                        byte[] messageByte = Encoding.Unicode.GetBytes(users[i].Message);
-                        byte[] messageByteLenght = Encoding.Unicode.GetBytes(messageByte.Length.ToString());
-                        _stream.Write(messageByteLenght, 0, messageByteLenght.Length);
-                        _stream.Read(_wait1, 0, _wait1.Length);
-                        _stream.Write(messageByte, 0, messageByte.Length);
-                    }
-                    else
-                    {
-                        string otvet = "1";
-                        byte[] otvetRegistra = Encoding.Unicode.GetBytes(otvet);
-                        _stream.Write(otvetRegistra, 0, otvetRegistra.Length);
-                    }
-                }*/
-
+              
                 foreach (var item in users)
                 {
                     if (item.Login != "admin")
