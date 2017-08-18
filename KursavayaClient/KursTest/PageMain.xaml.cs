@@ -144,9 +144,6 @@ namespace KursTest
                     MessageBox.Show("Неверный логин или пароль", "Error", MessageBoxButton.OK);
                     tbPassword.Clear();
                 }
-
-                // ((ContentControl)(this.Parent)).Content = new PageChat();
-
             }
         }
         private void butRegistr_Click(object sender, RoutedEventArgs e)

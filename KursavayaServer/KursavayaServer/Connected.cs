@@ -31,11 +31,14 @@ namespace KursavayaServer
         readonly byte[] _wait1 = new byte[1];
         readonly Random _rnd = new Random();
 
+        public Connected()
+        {
+            Console.WriteLine(Environment.NewLine + "Подключен!!");
+        }
 
         public void Listen(TcpListener server)
         {
             _client = server.AcceptTcpClient();
-            Console.WriteLine(Environment.NewLine + "Подключен!!");
             _stream = _client.GetStream();
         }
 
@@ -54,7 +57,7 @@ namespace KursavayaServer
             _stream.Read(typeSms, 0, typeSms.Length);
             string type = Encoding.Unicode.GetString(typeSms);
 
-            Console.WriteLine($"Принял:\tТип окна от которого пришло сообщение  {type}  ");
+           // Console.WriteLine($"Принял:\tТип окна от которого пришло сообщение  {type} {Environment.NewLine} ");
             return type;
         }
 
@@ -73,7 +76,7 @@ namespace KursavayaServer
             _stream.Read(dataSms, 0, dataSms.Length);
             _data = Encoding.Unicode.GetString(dataSms);
 
-            Console.WriteLine($"Принял:\tДанные пользователя при регистрации  {_data}");
+            //Console.WriteLine($"Принял:\tДанные пользователя при регистрации  {_data} {Environment.NewLine}");
             return _data;
         }
 
@@ -232,7 +235,7 @@ namespace KursavayaServer
                     string otvet = "0";
                     byte[] otvetRegistra = Encoding.Unicode.GetBytes(otvet);
                     _stream.Write(otvetRegistra, 0, otvetRegistra.Length);
-                    Console.WriteLine($"Система:  Вы вошли");
+                    Console.WriteLine($"Система:  Вы вошли: {_login}");
                 }
                 else
                 {

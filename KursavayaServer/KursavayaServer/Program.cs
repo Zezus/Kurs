@@ -45,7 +45,6 @@ namespace KursavayaServer
                     Connected.PageRemimdPas(boool);
                 }
             }
-            // ReSharper disable once FunctionNeverReturns
         }
     }
 }
